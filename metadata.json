@@ -1,0 +1,5 @@
+{
+  "name": "[Deploy] SWORD-2026 Workshop Website",
+  "description": "A website for the Symposium & Workshop on Olfactory Restoration and Diagnoses (SWORD-2026), providing information on the agenda, speakers, registration, and venue.",
+  "requestFramePermissions": []
+}
