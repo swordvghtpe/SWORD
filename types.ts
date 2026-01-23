@@ -1,8 +1,11 @@
 
 export interface Speaker {
-  name: string;
-  title: string;
-  affiliation: string;
+  nameZh: string;
+  nameEn: string;
+  titleZh: string;
+  titleEn: string;
+  affiliationZh: string;
+  affiliationEn: string;
   imageUrl: string;
 }
 

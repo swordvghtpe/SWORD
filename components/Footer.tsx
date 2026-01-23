@@ -41,22 +41,22 @@ const Footer: React.FC = () => {
               />
               <div className="text-center md:text-left">
                 <h3 className="text-3xl font-black tracking-tighter">SWORD-2026</h3>
-                <p className="text-sm font-bold text-gray-400 mt-1">Symposium & Workshop on Olfactory Restoration and Diagnoses</p>
+                <p className="text-sm font-bold text-gray-400 mt-1">Symposium & Workshop on Olfactory Restoration and Diagnosis</p>
               </div>
             </div>
 
             {/* Organizations */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-center md:text-left">
                 <div>
-                  <h4 className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4">{t('主辦單位', 'Organizers')}</h4>
-                  <ul className="space-y-2 font-bold text-gray-800">
+                  <h4 className="text-2xl font-black uppercase tracking-widest text-blue-600 mb-4">{t('主辦單位', 'Organizers')}</h4>
+                  <ul className="space-y-2 text-xl font-bold text-gray-800">
                     <li>{t('臺北榮民總醫院', 'Taipei Veterans General Hospital')}</li>
                     <li>{t('中華醫學會', 'Chinese Medical Association')}</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4">{t('協辦單位', 'Co-organizers')}</h4>
-                  <ul className="space-y-2 font-bold text-gray-800">
+                  <h4 className="text-2xl font-black uppercase tracking-widest text-blue-600 mb-4">{t('協辦單位', 'Co-organizers')}</h4>
+                  <ul className="space-y-2 text-xl font-bold text-gray-800">
                     <li>{t('台灣鼻科醫學會', 'Taiwan Rhinology Society')}</li>
                   </ul>
                 </div>
@@ -64,11 +64,11 @@ const Footer: React.FC = () => {
 
             {/* Contact */}
             <div className="text-center md:text-right">
-              <h4 className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4">{t('聯絡資訊', 'Contact Info')}</h4>
-              <p className="font-bold text-gray-800">{t('聯絡人：廖小姐 (Gina Liao)', 'Contact: Ms. Gina Liao')}</p>
+              <h4 className="text-2xl font-black uppercase tracking-widest text-blue-600 mb-4">{t('聯絡資訊', 'Contact Info')}</h4>
+              <p className="text-xl font-bold text-gray-800">{t('聯絡人：廖小姐', 'Contact: Ms. Gina Liao')}</p>
               <a 
                 href="mailto:sword.vghtpe@gmail.com" 
-                className="block mt-2 font-black text-xl hover:text-blue-600 transition-colors"
+                className="block mt-2 font-black text-xl md:text-2xl hover:text-blue-600 transition-colors"
               >
                 sword.vghtpe@gmail.com
               </a>

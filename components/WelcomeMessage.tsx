@@ -24,7 +24,6 @@ const WelcomeMessage: React.FC = () => {
           <h2 className="text-5xl font-black text-black tracking-tighter mb-8">
             {t('會長歡迎詞', 'Welcome Message')}
           </h2>
-          {/* Language toggle removed from here as it is now in Navbar */}
         </div>
 
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
@@ -47,12 +46,12 @@ const WelcomeMessage: React.FC = () => {
                         />
                     )}
                 </div>
-                 <div className="mt-8 text-center bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-100 shadow-sm">
-                    <p className="text-3xl font-black text-black">
+                 <div className="mt-8 text-center bg-white/80 backdrop-blur-sm p-5 rounded-2xl border border-gray-100 shadow-sm">
+                    <p className="text-4xl font-black text-black mb-2">
                         {t('趙勻廷 醫師', 'Dr. Yun-Ting Chao')}
                     </p>
-                    <p className="text-sm text-black font-black mt-2 uppercase tracking-widest bg-gray-50 inline-block px-4 py-1 rounded-full border border-gray-200">
-                        {t('會議主席 / 籌備委員會', 'Conference Chair')}
+                    <p className="text-2xl text-black font-black mt-2 uppercase tracking-widest bg-blue-50/50 inline-block px-8 py-3 rounded-full border border-blue-100 shadow-sm">
+                        {t('會議主席', 'Conference Chair')}
                     </p>
                  </div>
             </div>
@@ -89,7 +88,7 @@ const WelcomeMessage: React.FC = () => {
                          我們期盼透過本次 SWORD 研討會暨工作坊，促進國內外耳鼻喉科及相關領域專家的深度交流，激盪創新思維，並為嗅覺異常病人的診斷與治療帶來實質助益。誠摯邀請各位先進共襄盛舉，與我們一同探索嗅覺醫學的未來發展。
                        </p>
 
-                       {/* Signature Section */}
+                       {/* Signature Section (Chinese) - Logo on the Left */}
                        <div className="mt-16 pt-10 border-t border-gray-200 flex flex-row justify-between items-end">
                             <div className="flex items-center">
                                 <img 
@@ -100,7 +99,7 @@ const WelcomeMessage: React.FC = () => {
                             </div>
                             
                             <div className="flex flex-col items-end justify-between">
-                                <p className="text-xl font-black text-black mb-1">會議主席</p>
+                                <p className="text-3xl font-black text-black mb-1">會議主席</p>
                                 <img 
                                     src={signatureImgSrc} 
                                     alt="趙勻廷 簽名" 
@@ -135,21 +134,21 @@ const WelcomeMessage: React.FC = () => {
                        </p>
 
                        <p>
-                         The afternoon workshop will be conducted in small-group rotation stations and will introduce a wide range of practical topics, including olfactory and gustatory function assessments, imaging evaluation, animal models, as well as hands-on training in olfactory training protocols and platelet-rich plasma (PRP) injection techniques, which have gained increasing attention in clinical practice.
+                         The afternoon workshop will be conducted in small-group rotation stations and will introduce a wide range of practical topics, including olfactory and guestatory function assessments, imaging evaluation, animal models, as well as hands-on training in olfactory training protocols and platelet-rich plasma (PRP) injection techniques, which have gained increasing attention in clinical practice.
                        </p>
 
                        <p>
                          Through this SWORD symposium and workshop, we hope to foster meaningful international collaboration, stimulate innovative thinking, and provide tangible benefits for the diagnosis and management of patients with olfactory disorders. We sincerely invite you to join us in exploring the future of olfactory medicine together.
                        </p>
 
-                       {/* English Signature Section */}
+                       {/* English Signature Section - Logo on the RIGHT of the signature block */}
                        <div className="mt-16 pt-10 border-t border-gray-200">
-                            <p className="text-black font-black mb-4">With best regards,</p>
+                            <p className="text-black font-black mb-6">With best regards,</p>
                             
-                            <div className="flex flex-row items-end justify-between">
-                                {/* Left Content: Signature and Bio info */}
+                            <div className="flex flex-row items-end justify-between gap-8">
+                                {/* Left Column: Handwritten Signature and Info */}
                                 <div className="flex flex-col items-start overflow-hidden">
-                                    <p className="text-xl font-black text-black mb-4">Conference Chair</p>
+                                    <p className="text-3xl font-black text-black mb-4">Conference Chair</p>
                                     
                                     <img 
                                         src={signatureEnImgSrc} 
@@ -157,23 +156,24 @@ const WelcomeMessage: React.FC = () => {
                                         className="h-20 w-auto mb-4 mix-blend-multiply" 
                                     />
                                     
-                                    <p className="font-black text-black text-xl mb-1 whitespace-nowrap">Yun-Ting Chao, M.D., Ph.D.</p>
+                                    <p className="font-black text-black text-2xl mb-2 whitespace-nowrap">Yun-Ting Chao, M.D., Ph.D.</p>
                                     
-                                    <p className="text-black text-lg font-black opacity-70 whitespace-nowrap">Division Chief in Rhinology and Skull Base Surgery</p>
-                                    <p className="text-black text-lg font-black opacity-70 whitespace-nowrap">Department of Otorhinolaryngology-Head and Neck Surgery</p>
-                                    
-                                    <div className="mt-2">
-                                        <p className="text-black text-lg font-black opacity-70 whitespace-nowrap">Taipei Veterans General Hospital</p>
-                                        <p className="text-black text-lg font-black opacity-70 whitespace-nowrap">Taipei, Taiwan</p>
+                                    <div className="space-y-1">
+                                      <p className="text-black text-lg font-black opacity-70">Division Chief in Rhinology and Skull Base Surgery</p>
+                                      <div className="leading-tight">
+                                        <p className="text-black text-lg font-black opacity-70">Department of Otorhinolaryngology-</p>
+                                        <p className="text-black text-lg font-black opacity-70">Head and Neck Surgery</p>
+                                      </div>
+                                      <p className="text-black text-lg font-black opacity-70 mt-2">Taipei Veterans General Hospital, Taipei, Taiwan</p>
                                     </div>
                                 </div>
 
-                                {/* Right Content: Seal Image - Moved to the right and adjusted size */}
-                                <div className="ml-4 flex-shrink-0">
+                                {/* Right Column: Seal Image (Logo) */}
+                                <div className="flex-shrink-0 mb-2">
                                     <img 
                                         src={sealImgSrc} 
                                         alt="Seal" 
-                                        className="h-28 w-auto object-contain opacity-80"
+                                        className="h-36 w-auto object-contain opacity-90 transform rotate-2"
                                     />
                                 </div>
                             </div>

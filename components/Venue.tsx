@@ -13,7 +13,7 @@ const Venue: React.FC = () => {
           <h2 className="text-4xl font-black text-gray-900 sm:text-5xl tracking-tighter mb-4">
             {t('會議地點', 'Conference Venue')}
           </h2>
-          <div className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-black text-xl shadow-lg transform -rotate-1">
+          <div className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-black text-xl shadow-lg">
             {t('醫學科技大樓 一樓大會議室', 'Medical Science & Technology Building, 1st Floor Conference Room')}
           </div>
           <p className="mt-6 text-xl text-gray-600 font-bold">
@@ -98,19 +98,23 @@ const Venue: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-[2.5rem] blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative bg-white p-3 rounded-[2.5rem] shadow-2xl border border-gray-100">
-                <div className="overflow-hidden rounded-[2rem]">
+                <div className="overflow-hidden rounded-[2rem] bg-gray-50 flex items-center justify-center min-h-[300px]">
+                  {/* Using direct meee.com.tw link. Sometimes appending file type helps. */}
                   <img 
-                    src="https://meee.com.tw/XvoAYwr.jpg" 
-                    alt="醫學科技大樓位置圖" 
-                    className="w-full h-auto transform transition-transform duration-700 group-hover:scale-110"
+                    src="https://meee.com.tw/RSfci7b.jpg" 
+                    alt={t('醫院位置圖', 'Hospital Map')} 
+                    className="w-full h-auto transform transition-transform duration-700 group-hover:scale-110 shadow-inner"
+                    loading="lazy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = "https://meee.com.tw/XvoAYwr.jpg";
+                      if (!target.src.includes('.png')) {
+                        target.src = "https://meee.com.tw/RSfci7b.png";
+                      }
                     }}
                   />
                 </div>
                 <div className="absolute top-8 left-8 bg-blue-600 text-white px-4 py-1 rounded-full font-black text-sm shadow-lg">
-                  {t('院內位置圖', 'Campus Map')}
+                  {t('醫院位置圖', 'Hospital Map')}
                 </div>
               </div>
             </div>

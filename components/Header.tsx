@@ -48,12 +48,12 @@ const Header: React.FC = () => {
           </h1>
           <div className="space-y-2 mb-8">
             <p className="text-2xl md:text-4xl font-bold text-black">
-              {t('2026 嗅覺異常診斷與治療研討會', 'Symposium & Workshop on Olfactory Restoration and Diagnoses')}
+              {t('2026 嗅覺異常診斷與治療研討會暨工作坊', 'Symposium & Workshop on Olfactory Restoration and Diagnosis')}
             </p>
             {/* Show English subtitle only in Chinese mode to avoid redundancy, or keep it for style */}
              {t(
                <p className="text-xl md:text-2xl font-semibold text-black/80 tracking-wide uppercase">
-                 Symposium & Workshop on Olfactory Restoration and Diagnoses
+                 Symposium & Workshop on Olfactory Restoration and Diagnosis
                </p>,
                null
              )}
@@ -61,16 +61,11 @@ const Header: React.FC = () => {
 
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-3 md:space-y-0 md:space-x-8 text-lg font-bold text-black mb-10">
             <span className="flex items-center bg-white/80 px-4 py-2 rounded-xl shadow-sm border border-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v12a2 2 0 002 2z" />
-              </svg>
+              <img src="https://meee.com.tw/X5HYFWj.png" alt="Calendar Icon" className="h-6 w-6 mr-2 object-contain" />
               {t('2026 / 06 / 27 (六)', 'June 27, 2026 (Sat)')}
             </span>
             <span className="flex items-center bg-white/80 px-4 py-2 rounded-xl shadow-sm border border-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
+              <img src="https://meee.com.tw/sX1jugH.png" alt="Location Icon" className="h-6 w-6 mr-2 object-contain" />
               {t('臺北榮民總醫院', 'Taipei Veterans General Hospital')}
             </span>
           </div>
