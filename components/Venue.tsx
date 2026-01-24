@@ -26,8 +26,8 @@ const Venue: React.FC = () => {
               <h3 className="text-sm md:text-2xl font-black text-gray-900 mb-3 whitespace-nowrap">{t('開車路線', 'Driving')}</h3>
               <p className="text-gray-700 text-xs md:text-lg leading-relaxed font-bold">
                 {t(
-                  '交流道下→過百齡橋→(左轉)承德路→(右轉)石牌路二段201號',
-                  'Chongqing N. Rd. Exit → Bailing Bridge → (Left) Chengde Rd. → (Right) Shipai Rd.'
+                  '國道一號（中山高）→由重慶北路交流道下（往士林方向），過百齡橋→（左轉）承德路五、六段→（右轉）石牌路一段→石牌路二段201號',
+                  'Nat\'l Hwy 1 (Chongqing N. Rd. Exit) → Bailing Bridge → (Left) Chengde Rd. Sec. 5/6 → (Right) Shipai Rd. Sec. 1 → No. 201 Shipai Rd. Sec. 2'
                 )}
               </p>
             </div>
@@ -36,11 +36,13 @@ const Venue: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-xl border border-gray-100">
                   <p className="text-blue-600 font-black text-[10px] mb-1">{t('接駁車', 'Shuttle')}</p>
-                  <p className="text-gray-700 font-bold text-[10px] md:text-sm whitespace-nowrap">07:00 ~ 18:00</p>
+                  <p className="text-gray-700 font-bold text-[10px] md:text-sm whitespace-nowrap">
+                    {t('每 10 分鐘一班 (07:00 ~ 18:00)', 'Every 10 mins (07:00 ~ 18:00)')}
+                  </p>
                 </div>
                 <div className="bg-white p-4 rounded-xl border border-gray-100">
                   <p className="text-blue-600 font-black text-[10px] mb-1">{t('公車', 'Bus')}</p>
-                  <p className="text-gray-700 font-bold text-[9px] md:text-sm">508, 602, 小8, 224</p>
+                  <p className="text-gray-700 font-bold text-[9px] md:text-sm">重慶幹線, 508, 602, 小8, 224</p>
                 </div>
               </div>
             </div>

@@ -66,7 +66,7 @@ const WelcomeMessage: React.FC = () => {
                     <div className="space-y-6 text-base md:text-xl text-black leading-relaxed text-justify font-bold">
                        <p className="font-black text-black text-lg md:text-2xl mb-8">各位先進、同好您們好：</p>
                        
-                       <p>誠摯邀請您於2026年6月27日蒞臨參加由臺北榮民總醫院鼻頭頸科主辦的「嗅覺異常診斷與治療研討會暨工作坊（Symposium & Workshop on Olfactory Restoration and Diagnosis, SWORD）」。本次會議並由臺灣鼻科醫學會及中華醫學會協辦，謹代表籌備團隊，向所有與會貴賓表達最誠摯的歡迎與感謝。</p>
+                       <p>誠摯邀請您於2026年6月27日蒞臨參加由臺北榮民總醫院鼻頭頸科主辦的「嗅覺異常診斷與治療研討會暨工作坊（Symposium & Workshop on Olfactory Restoration and Diagnosis, SWORD）」。本次會議並由臺灣鼻科醫學會及中華醫學會協辦，謹代表籌備團隊，向所有與會貴賓表達最摯的歡迎與感謝。</p>
                        
                        <p>近年來，嗅覺功能障礙逐漸成為全球關注的重要醫學議題，也帶動相關研究與臨床治療的快速發展。兩年前，臺北榮總於臺灣鼻科醫學會年會期間舉辦全國首創的會前嗅覺工作坊，獲得國內外學者與臨床醫師的熱烈回響。在各界同道的期待下，我們進一步規劃本次 SWORD 會議，並以「診斷」與「重建」為核心主軸，整合最新研究成果與臨床實務經驗，期望打造一個兼具學術深度與臨床實用性的交流平台。</p>
                        
