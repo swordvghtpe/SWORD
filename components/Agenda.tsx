@@ -44,7 +44,7 @@ const workshopDataEn = [
 // --- Chinese Data ---
 const amAgendaZh: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: '趙勻廷 主任' },
-  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Thomas Hummel' },
+  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel' },
   { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: '趙勻廷 主任' },
   { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: '林高宗 醫師', moderator: '趙勻廷 主任' },
   { time: '10:00-10:10', title: 'Discussion' },
@@ -58,7 +58,7 @@ const amAgendaZh: AgendaItem[] = [
 
 const pmAgendaZh: AgendaItem[] = [
   { time: '12:40-13:20', title: 'Lunch symposium', speaker: '葉建甫 醫師', isSpecial: true },
-  { time: '13:30-14:10', title: 'How to set up a smell and taste clinic?', speaker: 'Thomas Hummel' },
+  { time: '13:30-14:10', title: 'How to set up a smell and taste clinic?', speaker: 'Prof. Thomas Hummel' },
   { time: '14:10-14:20', title: 'Discussion and orientation', speaker: '趙勻廷 主任' },
   { time: '14:20-14:30', title: 'Prepare', isSpecial: true },
   { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Subjective assessment (QoL), Trigeminal', '(D) Taste, Retronasal olfaction', '(E) Olfactory bulb, Animal/Cell', '(F) PRP, OT, automated testing'] },
