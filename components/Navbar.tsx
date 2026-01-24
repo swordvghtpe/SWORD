@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-blue-50' : 'bg-white/10 backdrop-blur-[2px]'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 md:h-24">
           <div className="flex-shrink-0">
             <a 
                 href="#home" 
@@ -54,21 +54,21 @@ const Navbar: React.FC = () => {
               <img 
                 src="https://meee.com.tw/TnhZtZH.jpg" 
                 alt="Logo" 
-                className="h-8 w-8 md:h-10 md:w-10 rounded-full object-cover" 
+                className="h-8 w-8 md:h-12 md:w-12 rounded-full object-cover" 
               />
-              <span className="font-black text-sm md:text-xl text-black tracking-tight whitespace-nowrap">
+              <span className="font-black text-sm md:text-2xl text-black tracking-tight whitespace-nowrap">
                 SWORD-2026
               </span>
             </a>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-0.5">
+            <div className="ml-10 flex items-center space-x-1">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={(e) => scrollToSection(e, link.href)}
-                  className="px-2 py-2 rounded-lg text-xs md:text-sm font-black cursor-pointer transition-all text-black hover:text-blue-600 whitespace-nowrap"
+                  className="px-3 py-2 rounded-lg text-xs md:text-base font-black cursor-pointer transition-all text-black hover:text-blue-600 whitespace-nowrap"
                 >
                   {link.label}
                 </a>
@@ -76,16 +76,16 @@ const Navbar: React.FC = () => {
               
               <button
                 onClick={toggleLanguage}
-                className="ml-2 px-2 py-1 rounded-full border border-black/80 text-black font-black text-[9px] md:text-[10px] hover:bg-black hover:text-white transition-all whitespace-nowrap"
+                className="ml-8 px-10 py-3 rounded-full border-[3px] border-black text-black font-black text-xl md:text-2xl hover:bg-black hover:text-white transition-all whitespace-nowrap transform active:scale-95 shadow-md"
               >
                 {language === 'zh' ? 'EN' : '中文'}
               </button>
             </div>
           </div>
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-4">
              <button
                 onClick={toggleLanguage}
-                className="px-2 py-0.5 rounded-full border border-black/30 text-black font-bold text-[9px] bg-white/50 whitespace-nowrap"
+                className="px-6 py-2.5 rounded-full border-[3px] border-black text-black font-black text-lg bg-white/90 whitespace-nowrap transform active:scale-95 shadow-lg"
               >
                 {language === 'zh' ? 'EN' : '中文'}
               </button>
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-1 rounded-lg text-black focus:outline-none"
             >
-              <svg className="h-5 w-5" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <svg className="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
-                className="text-black font-black block px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors text-xs whitespace-nowrap"
+                className="text-black font-black block px-4 py-4 rounded-xl hover:bg-blue-50 transition-colors text-sm whitespace-nowrap"
               >
                 {link.label}
               </a>
