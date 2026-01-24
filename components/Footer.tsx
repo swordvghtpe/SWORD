@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
 
           <div className="mt-12 pt-6 border-t border-gray-50 text-center space-y-2">
             <p className="text-gray-400 text-[10px] font-black tracking-widest uppercase">
-              SWORD-2026. Designed by Olfactory Research Team, TVGH
+              SWORD-2026. Designed by Dr. Yun-Ting Chao's Olfactory Research Team, Taipei Veterans General Hospital
             </p>
             <p className="text-gray-400 text-[10px] font-black tracking-widest">
               SWORD-2026 網頁製作 臺北榮民總醫院 耳鼻喉頭頸醫學部 鼻頭頸科主任 趙勻廷醫師 嗅覺團隊

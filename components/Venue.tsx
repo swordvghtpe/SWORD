@@ -13,7 +13,7 @@ const Venue: React.FC = () => {
             {t('會議地點', 'Conference Venue')}
           </h2>
           <div className="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full font-black text-[10px] md:text-xl shadow-md">
-            {t('醫學科技大樓 一樓大會議室', 'MST Building, 1F')}
+            {t('醫學科技大樓 一樓大會議室', 'Medical Science & Technology Building, 1F')}
           </div>
           <p className="mt-4 text-[10px] md:text-xl text-gray-600 font-bold">
             {t('112 臺北市北投區石牌路二段 201 號', 'No. 201, Sec. 2, Shipai Rd., Taipei')}

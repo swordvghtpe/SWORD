@@ -70,12 +70,12 @@ const Header: React.FC = () => {
 
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 text-lg md:text-xl font-black text-black mb-12">
             <span className="flex items-center bg-white/80 px-6 py-3 rounded-2xl shadow-md border border-gray-100">
-              <img src="https://meee.com.tw/X5HYFWj.png" alt="Calendar Icon" className="h-8 w-8 mr-3 object-contain" />
+              <img src="https://meee.com.tw/X5HYFWj.png" alt="Calendar Icon" className="h-10 w-10 md:h-14 md:w-14 mr-4 object-contain" />
               {t('2026 / 06 / 27 (六)', 'June 27, 2026 (Sat)')}
             </span>
             <span className="flex items-center bg-white/80 px-6 py-3 rounded-2xl shadow-md border border-gray-100">
-              <img src="https://meee.com.tw/sX1jugH.png" alt="Location Icon" className="h-8 w-8 mr-3 object-contain" />
-              {t('臺北榮民總醫院', 'TVGH')}
+              <img src="https://meee.com.tw/sX1jugH.png" alt="Location Icon" className="h-10 w-10 md:h-14 md:w-14 mr-4 object-contain" />
+              {t('臺北榮民總醫院', 'Taipei Veterans General Hospital')}
             </span>
           </div>
 
