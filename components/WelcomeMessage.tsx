@@ -63,12 +63,20 @@ const WelcomeMessage: React.FC = () => {
           <div className="lg:col-span-8">
             <div className="bg-white/60 p-6 md:p-12 rounded-[2rem] border border-gray-100 shadow-sm">
                 {language === 'zh' ? (
-                    <div className="space-y-5 text-base md:text-xl text-black leading-relaxed text-justify font-bold">
-                       <p className="font-black text-black text-lg md:text-2xl mb-6">各位先進、同好您們好：</p>
-                       <p>誠摯邀請您於2026年6月27日蒞臨參加由臺北榮民總醫院鼻頭頸科主辦的「嗅覺異常診斷與治療研討會暨工作坊（Symposium & Workshop on Olfactory Restoration and Diagnosis, SWORD）」。</p>
-                       <p>近年來，嗅覺功能障礙逐漸成為全球關注的重要醫學議題。兩年前，臺北榮總舉辦全國首創嗅覺工作坊，獲得熱烈回響。本次 SWORD 會議將以「診斷」與「重建」為核心，打造學術深度與臨床實用兼具的平台。</p>
-                       <p>活動涵蓋人類嗅覺基礎、特徵表現、認知功能關聯及手術治療最新進展。我們亦邀請 Thomas Hummel 教授、Eri Mori 教授及 Xinni Xu 醫師等國際專家共同參與。</p>
-                       <p>下午工作坊涵蓋各種評估工具、影像評估、動物模型及 PRP 注射實作。誠摯邀請各位先進共襄盛舉，一同探索嗅覺醫學的未來。</p>
+                    <div className="space-y-6 text-base md:text-xl text-black leading-relaxed text-justify font-bold">
+                       <p className="font-black text-black text-lg md:text-2xl mb-8">各位先進、同好您們好：</p>
+                       
+                       <p>誠摯邀請您於2026年6月27日蒞臨參加由臺北榮民總醫院鼻頭頸科主辦的「嗅覺異常診斷與治療研討會暨工作坊（Symposium & Workshop on Olfactory Restoration and Diagnosis, SWORD）」。本次會議並由臺灣鼻科醫學會及中華醫學會協辦，謹代表籌備團隊，向所有與會貴賓表達最誠摯的歡迎與感謝。</p>
+                       
+                       <p>近年來，嗅覺功能障礙逐漸成為全球關注的重要醫學議題，也帶動相關研究與臨床治療的快速發展。兩年前，臺北榮總於臺灣鼻科醫學會年會期間舉辦全國首創的會前嗅覺工作坊，獲得國內外學者與臨床醫師的熱烈回響。在各界同道的期待下，我們進一步規劃本次 SWORD 會議，並以「診斷」與「重建」為核心主軸，整合最新研究成果與臨床實務經驗，期望打造一個兼具學術深度與臨床實用性的交流平台。</p>
+                       
+                       <p>本次活動為一日整合型課程，上午舉辦學術研討會，下午則進行實作導向的工作坊。研討會內容將涵蓋人類嗅覺功能的基礎與臨床面向、各類嗅覺異常的特徵與表現、嗅覺與認知功能退化之關聯，以及目前手術與非手術治療的最新進展。</p>
+                       
+                       <p>我們亦十分榮幸邀請多位國際知名學者蒞臨，包括來自德國德勒斯登大學嗅味覺中心的 Thomas Hummel 教授、日本東京慈惠會醫科醫院的 Eri Mori 教授，以及新加坡國立大學的 Xinni Xu 醫師，共同分享其在嗅覺研究與臨床治療上的豐富經驗與獨到見解。</p>
+                       
+                       <p>下午的工作坊將以小組輪站方式進行，內容涵蓋各種嗅覺功能評估工具、影像學評估、動物模型介紹，以及臨床應用日益受到重視的嗅覺訓練與血小板濃縮液 ( PRP ) 注射實作，期望協助與會者將理論知識有效轉化為臨床實務能力，實際服務嗅覺異常病人。</p>
+                       
+                       <p>我們期盼透過本次 SWORD 研討會暨工作坊，促進國內外耳鼻喉科及相關領域專家的深度交流，激盪創新思維，並為嗅覺異常病人的診斷與治療帶來實質助益。誠摯邀請各位先進共襄盛舉，與我們一同探索嗅覺醫學的未來發展。</p>
 
                        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-row justify-between items-end">
                             <div className="flex items-center">
@@ -86,11 +94,20 @@ const WelcomeMessage: React.FC = () => {
                        </div>
                     </div>
                 ) : (
-                    <div className="space-y-5 text-base md:text-xl text-black leading-relaxed text-justify font-bold">
-                       <p className="font-black text-black text-lg md:text-2xl mb-6">Dear Colleagues and Friends,</p>
-                       <p>It is our great pleasure to invite you to the SWORD-2026 symposium and workshop to be held on June 27, 2026, in Taipei, organized by the Division of Rhinology, TVGH.</p>
-                       <p>This meeting focuses on diagnosis and restoration, integrating cutting-edge research with clinical experience. We are honored to welcome distinguished international speakers, including Prof. Thomas Hummel, Prof. Eri Mori, and Dr. Xinni Xu.</p>
-                       <p>The afternoon workshop provides hands-on training in olfactory assessments and PRP techniques. We sincerely invite you to join us in exploring the future of olfactory medicine together.</p>
+                    <div className="space-y-6 text-base md:text-xl text-black leading-relaxed text-justify font-bold">
+                       <p className="font-black text-black text-lg md:text-2xl mb-8">Dear Colleagues and Friends,</p>
+                       
+                       <p>It is our great pleasure to invite you to the Symposium & Workshop on Olfactory Restoration and Diagnosis (SWORD), to be held on June 27, 2026, in Taipei. This meeting is organized by the Division of Rhinology, TVGH, with the collaboration of the Taiwan Rhinology Society and the Chinese Medical Association. On behalf of the organizing committee, I would like to extend our warmest welcome and sincere appreciation to all participants.</p>
+                       
+                       <p>In recent years, olfactory dysfunction has emerged as an important global medical issue, driving rapid advances in both scientific research and clinical management. Two years ago, TVGH organized Taiwan’s first pre-congress olfactory workshop during the annual meeting of the Taiwan Rhinology Society, which received enthusiastic responses from both domestic and international clinicians and researchers. Encouraged by this strong interest, we now present SWORD, a meeting centered on the dual themes of diagnosis and restoration, integrating cutting-edge research with real-world clinical experience to create a platform that combines academic depth with practical clinical relevance.</p>
+                       
+                       <p>This one-day integrated course consists of a scientific symposium in the morning and a hands-on workshop in the afternoon. The morning symposium will cover a broad spectrum of topics, including human olfactory function, various types of olfactory disorders, the relationship between olfaction and cognitive decline, as well as current advances in both surgical and non-surgical treatments.</p>
+                       
+                       <p>We are honored to welcome distinguished international speakers, including Professor Thomas Hummel from the Smell and Taste Clinic at TU Dresden, Professor Eri Mori from The Jikei University School of Medicine, and Dr. Xinni Xu from the National University of Singapore. They will share their extensive experience and insights into olfactory research and clinical management.</p>
+                       
+                       <p>The afternoon workshop will be conducted in small-group rotation stations and will introduce a wide range of practical topics, including olfactory and gustatory function assessments, imaging evaluation, animal models, as well as hands-on training in olfactory training protocols and platelet-rich plasma (PRP) injection techniques, which have gained increasing attention in clinical practice.</p>
+                       
+                       <p>Through this SWORD symposium and workshop, we hope to foster meaningful international collaboration, stimulate innovative thinking, and provide tangible benefits for the diagnosis and management of patients with olfactory disorders. We sincerely invite you to join us in exploring the future of olfactory medicine together.</p>
 
                        <div className="mt-12 pt-8 border-t border-gray-200">
                             <p className="text-black font-black mb-4">With best regards,</p>
