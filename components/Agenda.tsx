@@ -36,7 +36,7 @@ const workshopDataEn = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Li", "Hsiu-Yun Fu"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
   { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
-  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Hsiu-Yueh Liu"] },
+  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Prof. Hsiu-Yueh Liu"] },
   { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hong"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
 ];
@@ -74,7 +74,7 @@ const workshopDataZh = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Dr. Xinni Xu", "林高宗 醫師", "傅秀雲 技師"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["沈炳宏 主任", "Prof. Eri Mori"] },
   { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["藍敏瑛 教授", "李文雅 醫師", "李依恬 技術員"] },
-  { topic: "(D) Taste, Retronasal olfaction", faculty: ["王勁傑 醫師", "劉秀月 博士"] },
+  { topic: "(D) Taste, Retronasal olfaction", faculty: ["王勁傑 醫師", "劉秀月 教授"] },
   { topic: "(E) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["趙勻廷 主任", "廖尹君 腦科學博士"] }
 ];

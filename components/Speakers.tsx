@@ -104,8 +104,8 @@ const speakersData: Speaker[] = [
     imageUrl: 'https://meee.com.tw/o8opkdo.jpg',
   },
   {
-    nameZh: '劉秀月 博士',
-    nameEn: 'Dr. Hsiu-Yueh Liu',
+    nameZh: '劉秀月 教授',
+    nameEn: 'Prof. Hsiu-Yueh Liu',
     titleZh: '',
     titleEn: '',
     affiliationZh: '高雄醫學大學\n口腔衛生科學研究所',
