@@ -40,14 +40,14 @@ const Footer: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-black uppercase tracking-widest text-blue-600 mb-2">{t('主辦', 'Organizers')}</h4>
                   <ul className="space-y-1 text-sm font-bold text-gray-700">
-                    <li>{t('臺北榮民總醫院', 'TVGH')}</li>
-                    <li>{t('中華醫學會', 'CMA')}</li>
+                    <li>{t('臺北榮民總醫院', 'Taipei Veterans General Hospital')}</li>
+                    <li>{t('中華醫學會', 'Chinese Medical Association')}</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-lg font-black uppercase tracking-widest text-blue-600 mb-2">{t('協辦', 'Co-orgs')}</h4>
                   <ul className="space-y-1 text-sm font-bold text-gray-700">
-                    <li>{t('台灣鼻科醫學會', 'TRS')}</li>
+                    <li>{t('台灣鼻科醫學會', 'Taiwan Rhinology Society')}</li>
                   </ul>
                 </div>
             </div>

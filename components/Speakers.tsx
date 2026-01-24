@@ -37,7 +37,7 @@ const speakersData: Speaker[] = [
     titleZh: '',
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
-    affiliationEn: 'TVGH, Taiwan',
+    affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
     imageUrl: 'https://meee.com.tw/qJfO68E.jpg',
   },
   {
@@ -51,7 +51,7 @@ const speakersData: Speaker[] = [
   },
   {
     nameZh: '沈炳宏 主任',
-    nameEn: 'Dr. Bing-Hung Shen',
+    nameEn: 'Dr. Ping-Hung Shen',
     titleZh: '',
     titleEn: '',
     affiliationZh: '台中光田綜合醫院\n鼻頭頸科',
@@ -64,7 +64,7 @@ const speakersData: Speaker[] = [
     titleZh: '',
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
-    affiliationEn: 'TVGH, Taiwan',
+    affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
     imageUrl: 'https://meee.com.tw/XvmEusJ.jpg',
   },
   {
@@ -73,7 +73,7 @@ const speakersData: Speaker[] = [
     titleZh: '',
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
-    affiliationEn: 'TVGH, Taiwan',
+    affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
     imageUrl: 'https://meee.com.tw/eBILrmF.jpg',
   },
   {
@@ -82,7 +82,7 @@ const speakersData: Speaker[] = [
     titleZh: '',
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
-    affiliationEn: 'TVGH, Taiwan',
+    affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
     imageUrl: 'https://meee.com.tw/8MxndVQ.jpg',
   },
   {

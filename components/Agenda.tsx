@@ -13,7 +13,7 @@ const amAgendaEn: AgendaItem[] = [
   { time: '10:10-10:30', title: 'Coffee break', isBreak: true },
   { time: '10:30-10:50', title: 'Update on treatment for olfactory dysfunction', speaker: 'Prof. Rong-Shan Jiang', moderator: 'Prof. Ming-Ying Lan' },
   { time: '10:50-11:10', title: 'Neuroplasticity and olfactory training', speaker: 'Dr. Yun-Ting Chao', moderator: 'Prof. Ming-Ying Lan' },
-  { time: '11:10-11:30', title: 'Olfactory preservation in sinus and skull base surgery', speaker: 'Prof. Ping-Hung Shen', moderator: 'Prof. Ming-Ying Lan' },
+  { time: '11:10-11:30', title: 'Olfactory preservation in sinus and skull base surgery', speaker: 'Dr. Ping-Hung Shen', moderator: 'Prof. Ming-Ying Lan' },
   { time: '11:30-11:50', title: 'Surgical treatment for olfactory cleft disease', speaker: 'Prof. Eri Mori', moderator: 'Prof. Ming-Ying Lan' },
   { time: '11:50-12:00', title: 'Discussion' },
 ];
@@ -24,7 +24,7 @@ const pmAgendaEn: AgendaItem[] = [
   { time: '14:10-14:20', title: 'Discussion and orientation', speaker: 'Dr. Yun-Ting Chao' },
   { time: '14:20-14:30', title: 'Prepare', isSpecial: true },
   { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Subjective assessment (QoL), Trigeminal', '(D) Taste, Retronasal olfaction', '(E) Olfactory bulb, Animal/Cell', '(F) PRP, OT, automated testing'] },
-  { time: '14:55-15:20', title: 'Workshop Rotation', description: ['Topics A - F'] },
+  { time: '14:55-15:20', title: 'Workshop Rotation', description: ['Topics A - f'] },
   { time: '15:20-15:45', title: 'Workshop Rotation', description: ['Topics A - F'] },
   { time: '15:40-16:15', title: 'Coffee break', isBreak: true },
   { time: '16:15-16:40', title: 'Workshop Rotation', description: ['Topics A - F'] },
