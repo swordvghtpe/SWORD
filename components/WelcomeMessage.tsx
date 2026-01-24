@@ -117,8 +117,10 @@ const WelcomeMessage: React.FC = () => {
                                     <img src={signatureEnImgSrc} alt="Signature" className="h-12 md:h-20 w-auto my-2 mix-blend-multiply" />
                                     <p className="font-black text-black text-lg md:text-2xl mb-1">Yun-Ting Chao, M.D., Ph.D.</p>
                                     <div className="text-[10px] md:text-sm font-black opacity-70 leading-tight">
-                                      <p>Division Chief in Rhinology, TVGH</p>
+                                      <p>Division Chief in Rhinology</p>
                                       <p>Department of Otorhinolaryngology-Head and Neck Surgery</p>
+                                      <p>Taipei Veterans General Hospital</p>
+                                      <p>Taipei, Taiwan</p>
                                     </div>
                                 </div>
                                 <div className="hidden md:block">

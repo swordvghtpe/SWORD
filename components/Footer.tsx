@@ -69,6 +69,9 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-[10px] font-black tracking-widest uppercase">
               SWORD-2026. Designed by Olfactory Research Team, TVGH
             </p>
+            <p className="text-gray-400 text-[10px] font-black tracking-widest">
+              SWORD-2026 網頁製作 臺北榮民總醫院 耳鼻喉頭頸醫學部 鼻頭頸科主任 趙勻廷醫師 嗅覺團隊
+            </p>
           </div>
         </div>
       </footer>
