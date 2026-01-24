@@ -34,8 +34,8 @@ const speakersData: Speaker[] = [
   {
     nameZh: '趙勻廷 教授',
     nameEn: 'Prof. Yun-Ting Chao',
-    titleZh: 'SWORD-2026\n大會會長\n科主任 / 主治醫師',
-    titleEn: 'SWORD-2026\nConference Chair\nDirector in Rhinology / Physician',
+    titleZh: 'SWORD-2026\n大會會長\n科主任',
+    titleEn: 'SWORD-2026\nConference Chair\nDirector in Rhinology',
     affiliationZh: '臺北榮民總醫院\n耳鼻喉頭頸醫學部 鼻頭頸科',
     affiliationEn: 'Div. of Rhinology\nDept. of Otorhinolaryngology\nTaipei Veterans General Hospital, Taipei, Taiwan',
     imageUrl: 'https://meee.com.tw/qJfO68E.jpg',
@@ -61,8 +61,8 @@ const speakersData: Speaker[] = [
   {
     nameZh: '藍敏瑛 教授',
     nameEn: 'Prof. Ming-Ying Lan',
-    titleZh: 'SWORD-2026\n榮譽會長\n主治醫師',
-    titleEn: 'SWORD-2026\nHonorary Chair\nPhysician',
+    titleZh: 'SWORD-2026\n榮譽會長',
+    titleEn: 'SWORD-2026\nHonorary Chair',
     affiliationZh: '臺北榮民總醫院\n耳鼻喉頭頸醫學部 鼻頭頸科',
     affiliationEn: 'Div. of Rhinology\nDept. of Otorhinolaryngology\nTaipei Veterans General Hospital, Taipei, Taiwan',
     imageUrl: 'https://meee.com.tw/XvmEusJ.jpg',

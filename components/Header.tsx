@@ -43,29 +43,29 @@ const Header: React.FC = () => {
 
         {/* Text Content */}
         <div className="text-center md:text-left">
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-tight mb-2 text-black">
+          <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-4 text-black">
             SWORD-2026
           </h1>
-          <div className="space-y-2 mb-8">
-            <p className="text-2xl md:text-4xl font-bold text-black">
+          <div className="space-y-4 mb-10">
+            <p className="text-2xl md:text-5xl font-black text-black leading-tight">
               {t('2026 嗅覺異常診斷與治療研討會暨工作坊', 'Symposium & Workshop on Olfactory Restoration and Diagnosis')}
             </p>
-            {/* Show English subtitle only in Chinese mode to avoid redundancy, or keep it for style */}
+            {/* Show English subtitle only in Chinese mode for design depth */}
              {t(
-               <p className="text-xl md:text-2xl font-semibold text-black/80 tracking-wide uppercase">
+               <p className="text-lg md:text-2xl font-bold text-black/70 tracking-wide uppercase leading-snug">
                  Symposium & Workshop on Olfactory Restoration and Diagnosis
                </p>,
                null
              )}
           </div>
 
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-3 md:space-y-0 md:space-x-8 text-lg font-bold text-black mb-10">
-            <span className="flex items-center bg-white/80 px-4 py-2 rounded-xl shadow-sm border border-gray-100">
-              <img src="https://meee.com.tw/X5HYFWj.png" alt="Calendar Icon" className="h-6 w-6 mr-2 object-contain" />
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 text-lg md:text-xl font-black text-black mb-12">
+            <span className="flex items-center bg-white/80 px-6 py-3 rounded-2xl shadow-md border border-gray-100">
+              <img src="https://meee.com.tw/X5HYFWj.png" alt="Calendar Icon" className="h-8 w-8 mr-3 object-contain" />
               {t('2026 / 06 / 27 (六)', 'June 27, 2026 (Sat)')}
             </span>
-            <span className="flex items-center bg-white/80 px-4 py-2 rounded-xl shadow-sm border border-gray-100">
-              <img src="https://meee.com.tw/sX1jugH.png" alt="Location Icon" className="h-6 w-6 mr-2 object-contain" />
+            <span className="flex items-center bg-white/80 px-6 py-3 rounded-2xl shadow-md border border-gray-100">
+              <img src="https://meee.com.tw/sX1jugH.png" alt="Location Icon" className="h-8 w-8 mr-3 object-contain" />
               {t('臺北榮民總醫院', 'Taipei Veterans General Hospital')}
             </span>
           </div>
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           <a 
             href="#registration"
             onClick={scrollToRegistration}
-            className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-extrabold py-4 px-12 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_20px_40px_rgba(37,99,235,0.4)] active:scale-95 duration-300 ease-in-out shadow-lg cursor-pointer text-xl"
+            className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-black py-5 px-16 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_20px_50px_rgba(37,99,235,0.5)] active:scale-95 duration-300 ease-in-out shadow-xl cursor-pointer text-2xl"
           >
             {t('立即報名 / Register Now', 'Register Now')}
           </a>
