@@ -33,12 +33,12 @@ const pmAgendaEn: AgendaItem[] = [
 ];
 
 const workshopDataEn = [
-  { topic: "(A) Sniffin' Sticks", faculty: ["Dr. Xinni Xu", "Dr. Kao-Tsung Li", "Hsiu-Yun Fu"] },
-  { topic: "(B) TIBSIT, open essence", faculty: ["Prof. Ping-Hung Shen", "Prof. Eri Mori"] },
-  { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Prof. Ming-Ying Lan", "Dr. Wen-Ya Lee", "Yi-Tien Li"] },
-  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Dr. Jing-Jie Wang", "Dr. Hsiu-Yueh Liu"] },
-  { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Dr. Chien-Fu Yeh", "Dr. Li-Ting Hong"] },
-  { topic: "(F) PRP, OT, automated testing", faculty: ["Dr. Yun-Ting Chao", "Dr. Yin-Chun Liao"] }
+  { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Li", "Hsiu-Yun Fu"] },
+  { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
+  { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
+  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Hsiu-Yueh Liu"] },
+  { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hong"] },
+  { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
 ];
 
 // --- Chinese Data ---
