@@ -209,7 +209,7 @@ const Agenda: React.FC = () => {
                             </h4>
                             <div className="block border-t border-blue-100/50 pt-3">
                                 <span className="text-[9px] font-black uppercase tracking-widest text-blue-400 block mb-1">
-                                    {t('帶教老師 Faculty', 'Faculty')}
+                                    {t('講師', 'Faculty')}
                                 </span>
                                 <div className="text-gray-800 font-bold text-xs md:text-base flex flex-wrap gap-x-2 gap-y-1">
                                     {item.faculty.map((name, i) => (
