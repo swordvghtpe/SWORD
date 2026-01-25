@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Speaker } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -10,7 +9,7 @@ const speakersData: Speaker[] = [
     titleZh: '',
     titleEn: '',
     affiliationZh: '德國德勒斯登大學 耳鼻喉科部\n嗅味覺中心',
-    affiliationEn: 'Smell & Taste Clinic\nUniversity of Technology, Germany',
+    affiliationEn: 'Technology University of Dresden, Germany',
     imageUrl: 'https://meee.com.tw/lNXtFZm.jpg',
   },
   {

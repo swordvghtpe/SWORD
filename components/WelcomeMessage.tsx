@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -103,9 +102,9 @@ const WelcomeMessage: React.FC = () => {
                        
                        <p>This one-day integrated course consists of a scientific symposium in the morning and a hands-on workshop in the afternoon. The morning symposium will cover a broad spectrum of topics, including human olfactory function, various types of olfactory disorders, the relationship between olfaction and cognitive decline, as well as current advances in both surgical and non-surgical treatments.</p>
                        
-                       <p>We are honored to welcome distinguished international speakers, including Professor Thomas Hummel from the Smell and Taste Clinic at TU Dresden, Professor Eri Mori from The Jikei University School of Medicine, and Dr. Xinni Xu from the National University of Singapore. They will share their extensive experience and insights into olfactory research and clinical management.</p>
+                       <p>We are honored to welcome distinguished international speakers, including Professor Thomas Hummel from Technology University of Dresden, Professor Eri Mori from The Jikei University School of Medicine, and Dr. Xinni Xu from the National University of Singapore. They will share their extensive experience and insights into olfactory research and clinical management.</p>
                        
-                       <p>The afternoon workshop will be conducted in small-group rotation stations and will introduce a wide range of practical topics, including olfactory and gustatory function assessments, imaging evaluation, animal models, as well as hands-on training in olfactory training protocols and platelet-rich plasma (PRP) injection techniques, which have gained increasing attention in clinical practice.</p>
+                       <p>The afternoon workshop will be conducted in small-group rotation stations and will introduce a range of practical topics, including olfactory and gustatory function assessments, imaging evaluation, animal models, as well as hands-on training in olfactory training protocols and platelet-rich plasma (PRP) injection techniques, which have gained increasing attention in clinical practice.</p>
                        
                        <p>Through this SWORD symposium and workshop, we hope to foster meaningful international collaboration, stimulate innovative thinking, and provide tangible benefits for the diagnosis and management of patients with olfactory disorders. We sincerely invite you to join us in exploring the future of olfactory medicine together.</p>
 
