@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -8,7 +7,7 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYXQFkSwYRqv
 
 const domesticFees = [
   { titleZh: '住院醫師', titleEn: 'Resident', earlyBird: 'NT$ 2,500', regular: 'NT$ 3,500' },
-  { titleZh: '會員醫師', titleEn: 'Member', earlyBird: 'NT$ 3,500', regular: 'NT$ 4,500' },
+  { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', earlyBird: 'NT$ 3,500', regular: 'NT$ 4,500' },
   { titleZh: '主治醫師', titleEn: 'Physician', earlyBird: 'NT$ 4,500', regular: 'NT$ 5,500' },
 ];
 
@@ -159,7 +158,9 @@ const Registration: React.FC = () => {
                 <tbody className="bg-white">
                   {(activeTab === 'domestic' ? domesticFees : internationalFees).map((fee, index) => (
                     <tr key={index} className="border-b border-orange-50 last:border-0">
-                      <td className="px-0.5 py-3 font-bold text-gray-800 text-[10px] md:text-lg whitespace-nowrap">{t((fee as any).titleZh || (fee as any).title, (fee as any).titleEn || (fee as any).title)}</td>
+                      <td className="px-0.5 py-3 font-bold text-gray-800 text-[10px] md:text-lg whitespace-pre-line leading-tight">
+                        {t((fee as any).titleZh || (fee as any).title, (fee as any).titleEn || (fee as any).title)}
+                      </td>
                       <td className="px-0.5 py-3 font-black text-[11px] md:text-2xl text-orange-600 whitespace-nowrap">{fee.earlyBird}</td>
                       <td className="px-0.5 py-3 font-black text-[11px] md:text-2xl text-gray-300 whitespace-nowrap">{fee.regular}</td>
                     </tr>
@@ -263,7 +264,7 @@ const Registration: React.FC = () => {
                                     {activeTab === 'domestic' ? (
                                         domesticFees.map(f => (
                                           <option key={f.titleZh} value={t(f.titleZh, f.titleEn)}>
-                                            {t(f.titleZh, f.titleEn)}
+                                            {t(f.titleZh.replace('\n', ' '), f.titleEn.replace('\n', ' '))}
                                           </option>
                                         ))
                                     ) : (
