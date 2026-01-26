@@ -204,6 +204,12 @@ const Registration: React.FC = () => {
                 <button onClick={() => setShowModal(true)} className="bg-orange-600 hover:bg-orange-700 text-white font-black py-3 px-8 rounded-full transition-all shadow-lg text-sm md:text-2xl active:scale-95 whitespace-nowrap">
                     {t('前往報名', 'Register Now')}
                 </button>
+                <p className="mt-4 text-[10px] md:text-base font-bold text-gray-500 leading-relaxed">
+                    {t(
+                      <>台灣耳鼻喉頭頸外科醫學會、台灣鼻科醫學會<br />繼續教育學分申請中</>,
+                      <>CME credits from Taiwan Society of Otorhinolaryngology Head and Neck Surgery and Taiwan Rhinology Society are under application</>
+                    )}
+                </p>
             </div>
           </div>
         </div>
