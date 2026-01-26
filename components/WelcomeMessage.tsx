@@ -7,7 +7,7 @@ const WelcomeMessage: React.FC = () => {
   const chairmanImgSrc = "https://meee.com.tw/qJfO68E.jpg";
   const bgImg = "https://meee.com.tw/zEf4eA3.jpg";
   const signatureImgSrc = "https://meee.com.tw/La0v76Y.jpg";
-  const signatureEnImgSrc = "https://meee.com.tw/SGLghJ2.jpg";
+  const signatureEnImgSrc = "https://meee.com.tw/snJks8n.jpg";
   const sealImgSrc = "https://meee.com.tw/UhIm98T.jpg";
 
   return (
