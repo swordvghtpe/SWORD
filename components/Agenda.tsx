@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { AgendaItem } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -6,7 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 // --- English Data ---
 const amAgendaEn: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: 'Dr. Yun-Ting Chao' },
-  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel' },
+  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel', moderator: 'Dr. Yun-Ting Chao' },
   { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: 'Dr. Yun-Ting Chao' },
   { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: 'Dr. Kao-Tsung Li', moderator: 'Dr. Yun-Ting Chao' },
   { time: '10:00-10:10', title: 'Discussion' },
@@ -44,7 +43,7 @@ const workshopDataEn = [
 // --- Chinese Data ---
 const amAgendaZh: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: '趙勻廷 主任' },
-  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel' },
+  { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel', moderator: '趙勻廷 主任' },
   { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: '趙勻廷 主任' },
   { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: '林高宗 醫師', moderator: '趙勻廷 主任' },
   { time: '10:00-10:10', title: 'Discussion' },
@@ -105,8 +104,10 @@ const AgendaRow: React.FC<{ item: AgendaItem; theme: 'yellow' | 'green'; lang: '
 
       <div className="flex-grow sm:pl-4">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-            <div>
-                <h4 className={`text-xs md:text-lg font-semibold ${titleClass}`}>{item.title}</h4>
+            <div className="w-full">
+                <h4 className={`text-xs md:text-lg font-semibold ${titleClass}`}>
+                  {item.title}
+                </h4>
                 {item.description && (
                    <ul className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1 text-[10px] md:text-sm text-gray-600">
                      {item.description.map((desc, i) => (
@@ -120,13 +121,21 @@ const AgendaRow: React.FC<{ item: AgendaItem; theme: 'yellow' | 'green'; lang: '
             </div>
 
             {(item.speaker || item.moderator) && (
-                <div className="mt-2 md:mt-0 md:text-right flex-shrink-0 md:ml-4">
+                <div className="mt-2 md:mt-0 md:text-right flex-shrink-0 md:ml-4 space-y-2">
                     {item.speaker && (
                         <div className="text-gray-800 font-medium">
-                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block mb-1">
+                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block">
                                 {lang === 'zh' ? '講師' : 'Speaker'}
                             </span>
                             <span className="block text-xs md:text-base">{item.speaker}</span>
+                        </div>
+                    )}
+                    {item.moderator && (
+                        <div className="text-blue-800 font-medium">
+                            <span className="text-[9px] text-blue-400 uppercase tracking-wider block">
+                                {lang === 'zh' ? '座長' : 'Moderator'}
+                            </span>
+                            <span className="block text-xs md:text-base">{item.moderator}</span>
                         </div>
                     )}
                 </div>

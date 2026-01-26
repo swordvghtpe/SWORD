@@ -1,4 +1,3 @@
-
 export interface Speaker {
   nameZh: string;
   nameEn: string;
@@ -17,4 +16,5 @@ export interface AgendaItem {
   description?: string[];
   isBreak?: boolean;
   isSpecial?: boolean; // For Lunch, Prepare, etc.
+  isModerator?: boolean; // For Session Moderator rows
 }
