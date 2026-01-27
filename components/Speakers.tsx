@@ -95,10 +95,10 @@ const speakersData: Speaker[] = [
   },
   {
     nameZh: '林高宗 醫師',
-    nameEn: 'Dr. Kao-Tsung Li',
+    nameEn: 'Dr. Kao-Tsung Lin',
     titleZh: '',
     titleEn: '',
-    affiliationZh: '台大醫院 雲林分院\n耳鼻喉科',
+    affiliationZh: '台大雲林分院\n耳鼻喉科',
     affiliationEn: 'NTU Hospital Yunlin Branch, Taiwan',
     imageUrl: 'https://meee.com.tw/o8opkdo.jpg',
   },

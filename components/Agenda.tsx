@@ -7,7 +7,7 @@ const amAgendaEn: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: 'Dr. Yun-Ting Chao' },
   { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel', moderator: 'Dr. Yun-Ting Chao' },
   { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: 'Dr. Yun-Ting Chao' },
-  { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: 'Dr. Kao-Tsung Li', moderator: 'Dr. Yun-Ting Chao' },
+  { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: 'Dr. Kao-Tsung Lin', moderator: 'Dr. Yun-Ting Chao' },
   { time: '10:00-10:10', title: 'Discussion' },
   { time: '10:10-10:30', title: 'Coffee break', isBreak: true },
   { time: '10:30-10:50', title: 'Update on treatment for olfactory dysfunction', speaker: 'Prof. Rong-Shan Jiang', moderator: 'Prof. Ming-Ying Lan' },
@@ -32,7 +32,7 @@ const pmAgendaEn: AgendaItem[] = [
 ];
 
 const workshopDataEn = [
-  { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Li", "Hsiu-Yun Fu"] },
+  { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Lin", "Hsiu-Yun Fu"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
   { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Prof. Hsiu-Yueh Liu"] },
