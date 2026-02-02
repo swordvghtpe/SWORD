@@ -8,7 +8,7 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYXQFkSwYRqv
 const domesticFees = [
   { titleZh: '住院醫師', titleEn: 'Resident', earlyBird: 'NT$ 2,500', regular: 'NT$ 3,500' },
   { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', earlyBird: 'NT$ 3,500', regular: 'NT$ 4,500' },
-  { titleZh: '主治醫師', titleEn: 'Physician', earlyBird: 'NT$ 4,500', regular: 'NT$ 5,500' },
+  { titleZh: '主治醫師/其他專業人士', titleEn: 'Physician / Other Professionals', earlyBird: 'NT$ 4,500', regular: 'NT$ 5,500' },
 ];
 
 const internationalFees = [
