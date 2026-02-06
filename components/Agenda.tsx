@@ -36,7 +36,7 @@ const workshopDataEn = [
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
   { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Prof. Hsiu-Yueh Liu"] },
-  { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hong"] },
+  { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
 ];
 

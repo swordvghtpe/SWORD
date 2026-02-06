@@ -77,7 +77,7 @@ const speakersData: Speaker[] = [
   },
   {
     nameZh: '洪莉婷 醫師',
-    nameEn: 'Dr. Li-Ting Hong',
+    nameEn: 'Dr. Li-Ting Hung',
     titleZh: '',
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
