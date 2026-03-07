@@ -91,7 +91,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺中榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taichung Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/jBeA4F3.jpg',
+    imageUrl: 'https://meee.com.tw/Tj5GITZ.jpg',
   },
   {
     nameZh: '林高宗 醫師',
