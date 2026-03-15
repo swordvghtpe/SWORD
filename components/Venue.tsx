@@ -83,7 +83,7 @@ const Venue: React.FC = () => {
             <div className="group relative flex flex-col bg-white rounded-[1.5rem] border border-gray-200 shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                 <img 
-                  src="https://meee.com.tw/Wt6H0IU.jpg" 
+                  src="https://meee.com.tw/Kt7vlV0.jpg" 
                   alt="VGH Parking" 
                   className="w-full h-full object-cover"
                 />
@@ -100,7 +100,7 @@ const Venue: React.FC = () => {
                 </p>
               </div>
               <a 
-                href="https://meee.com.tw/Wt6H0IU" 
+                href="https://meee.com.tw/Kt7vlV0.jpg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
@@ -111,7 +111,7 @@ const Venue: React.FC = () => {
             <div className="group relative flex flex-col bg-white rounded-[1.5rem] border border-gray-200 shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                 <img 
-                  src="https://meee.com.tw/95MuMHW.jpg" 
+                  src="https://meee.com.tw/2zIBPq6.jpg" 
                   alt="NTUNHS Parking" 
                   className="w-full h-full object-cover"
                 />
@@ -125,7 +125,7 @@ const Venue: React.FC = () => {
                 </p>
               </div>
               <a 
-                href="https://meee.com.tw/95MuMHW" 
+                href="https://meee.com.tw/2zIBPq6.jpg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
@@ -136,7 +136,7 @@ const Venue: React.FC = () => {
             <div className="group relative flex flex-col bg-white rounded-[1.5rem] border border-gray-200 shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                 <img 
-                  src="https://meee.com.tw/WfkzKBj.jpg" 
+                  src="https://meee.com.tw/44hUaSt.jpg" 
                   alt="Zhenxing Park Parking" 
                   className="w-full h-full object-cover"
                 />
@@ -150,7 +150,7 @@ const Venue: React.FC = () => {
                 </p>
               </div>
               <a 
-                href="https://meee.com.tw/WfkzKBj" 
+                href="https://meee.com.tw/44hUaSt.jpg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
