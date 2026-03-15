@@ -206,8 +206,8 @@ const Registration: React.FC = () => {
                 </button>
                 <p className="mt-4 text-[10px] md:text-base font-bold text-gray-500 leading-relaxed">
                     {t(
-                      <>台灣耳鼻喉頭頸外科醫學會、台灣鼻科醫學會<br />繼續教育學分申請中</>,
-                      <>CME credits from Taiwan Society of Otorhinolaryngology Head and Neck Surgery and Taiwan Rhinology Society are under application</>
+                      <>繼續教育學分<br />台灣耳鼻喉頭頸外科醫學會 4分<br />台灣鼻科醫學會 8分</>,
+                      <>CME Credits<br />Taiwan Society of Otorhinolaryngology Head and Neck Surgery: 4 points<br />Taiwan Rhinology Society: 8 points</>
                     )}
                 </p>
             </div>
