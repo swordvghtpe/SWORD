@@ -6,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const amAgendaEn: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: 'Dr. Yun-Ting Chao' },
   { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel', moderator: 'Dr. Yun-Ting Chao' },
-  { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: 'Dr. Yun-Ting Chao' },
+  { time: '09:20-09:40', title: 'Parosmia - when things smell different from what they used to', speaker: 'Dr. Xinni Xu', moderator: 'Dr. Yun-Ting Chao' },
   { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: 'Dr. Kao-Tsung Lin', moderator: 'Dr. Yun-Ting Chao' },
   { time: '10:00-10:10', title: 'Discussion' },
   { time: '10:10-10:30', title: 'Coffee break', isBreak: true },
@@ -44,7 +44,7 @@ const workshopDataEn = [
 const amAgendaZh: AgendaItem[] = [
   { time: '08:30-08:40', title: 'Opening remarks', speaker: '趙勻廷 主任' },
   { time: '08:40-09:20', title: 'Why olfaction is important', speaker: 'Prof. Thomas Hummel', moderator: '趙勻廷 主任' },
-  { time: '09:20-09:40', title: 'Parosmia', speaker: 'Dr. Xinni Xu', moderator: '趙勻廷 主任' },
+  { time: '09:20-09:40', title: 'Parosmia - when things smell different from what they used to', speaker: 'Dr. Xinni Xu', moderator: '趙勻廷 主任' },
   { time: '09:40-10:00', title: 'Olfactory loss and neurodegenerative diseases', speaker: '林高宗 醫師', moderator: '趙勻廷 主任' },
   { time: '10:00-10:10', title: 'Discussion' },
   { time: '10:10-10:30', title: 'Coffee break', isBreak: true },
