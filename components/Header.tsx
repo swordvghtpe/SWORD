@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       />
       
       {/* CC Attribution Label */}
-      <span className="absolute bottom-4 left-4 text-[10px] text-white/40 font-bold z-10 select-none">
+      <span className="absolute bottom-4 left-4 text-sm text-black font-bold z-10 select-none">
         【cc免費使用】
       </span>
       

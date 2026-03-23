@@ -15,7 +15,7 @@ const WelcomeMessage: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img src={bgImg} alt="Background" className="w-full h-full object-cover opacity-10" />
         {/* CC Attribution Label for the 101 image */}
-        <span className="absolute bottom-2 left-4 text-[9px] text-black/20 font-bold select-none">
+        <span className="absolute bottom-2 left-4 text-sm text-black font-bold select-none">
           【cc免費使用】
         </span>
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>

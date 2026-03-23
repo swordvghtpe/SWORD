@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           className="w-full h-full object-cover"
         />
         {/* CC Attribution Label for the 101 image in footer */}
-        <span className="absolute bottom-4 left-4 text-[10px] text-white/50 font-bold z-10 select-none">
+        <span className="absolute bottom-4 left-4 text-sm text-black font-bold z-10 select-none">
           【cc免費使用】
         </span>
         <div className="absolute inset-0 bg-white/5"></div>
