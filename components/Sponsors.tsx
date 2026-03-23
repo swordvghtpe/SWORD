@@ -66,12 +66,12 @@ const Sponsors: React.FC = () => {
           </h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-blue-500 mx-auto rounded-full mb-6"></div>
           <p className="text-lg md:text-xl font-bold text-gray-700 max-w-2xl mx-auto">
-            {t('感謝廠商參與SWORD-2026活動', 'Thank you to the sponsors for participating in the SWORD-2026 event')}
+            {t('感謝廠商參與SWORD-2026活動', 'We would like to express our sincere appreciation to all vendors for their participation and support in the SWORD-2026 event.')}
           </p>
           <div className="flex items-center justify-center gap-2 mt-4 text-gray-400">
             <span className="w-8 h-[1px] bg-gray-300"></span>
             <p className="text-sm md:text-base font-medium italic">
-              {t('由AI隨機排序', 'Randomly sorted by AI')}
+              {t('由 AI 系統進行隨機排序', 'Randomly ordered by an AI system')}
             </p>
             <span className="w-8 h-[1px] bg-gray-300"></span>
           </div>
