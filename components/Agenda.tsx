@@ -13,7 +13,7 @@ const amAgendaEn: AgendaItem[] = [
   { time: '10:30-10:50', title: 'Update on treatment for olfactory dysfunction', speaker: 'Prof. Rong-Shan Jiang', moderator: 'Prof. Ming-Ying Lan' },
   { time: '10:50-11:10', title: 'Neuroplasticity and olfactory training', speaker: 'Dr. Yun-Ting Chao', moderator: 'Prof. Ming-Ying Lan' },
   { time: '11:10-11:30', title: 'Olfactory preservation in sinus and skull base surgery', speaker: 'Dr. Ping-Hung Shen', moderator: 'Prof. Ming-Ying Lan' },
-  { time: '11:30-11:50', title: 'Surgical treatment for olfactory cleft disease', speaker: 'Prof. Eri Mori', moderator: 'Prof. Ming-Ying Lan' },
+  { time: '11:30-11:50', title: 'Surgical treatment for olfactory cleft syndrome', speaker: 'Prof. Eri Mori', moderator: 'Prof. Ming-Ying Lan' },
   { time: '11:50-12:00', title: 'Discussion' },
 ];
 
@@ -51,7 +51,7 @@ const amAgendaZh: AgendaItem[] = [
   { time: '10:30-10:50', title: 'Update on treatment for olfactory dysfunction', speaker: '江榮山 教授', moderator: '藍敏瑛 教授' },
   { time: '10:50-11:10', title: 'Neuroplasticity and olfactory training', speaker: '趙勻廷 主任', moderator: '藍敏瑛 教授' },
   { time: '11:10-11:30', title: 'Olfactory preservation in sinus and skull base surgery', speaker: '沈炳宏 主任', moderator: '藍敏瑛 教授' },
-  { time: '11:30-11:50', title: 'Surgical treatment for olfactory cleft disease', speaker: 'Prof. Eri Mori', moderator: '藍敏瑛 教授' },
+  { time: '11:30-11:50', title: 'Surgical treatment for olfactory cleft syndrome', speaker: 'Prof. Eri Mori', moderator: '藍敏瑛 教授' },
   { time: '11:50-12:00', title: 'Discussion' },
 ];
 
