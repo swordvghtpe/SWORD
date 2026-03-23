@@ -2,16 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const sponsorImages = [
-  "https://i.meee.com.tw/G62YuqH.png",
-  "https://i.meee.com.tw/oUKlPA5.png",
-  "https://i.meee.com.tw/HsfCapR.png",
-  "https://i.meee.com.tw/y4tGfkI.png",
-  "https://i.meee.com.tw/Jm63buc.png",
-  "https://i.meee.com.tw/1FixJUV.png",
-  "https://i.meee.com.tw/oLCRG3h.png",
-  "https://i.meee.com.tw/tzrJkVL.png",
-  "https://i.meee.com.tw/yiF2Qim.png",
-  "https://i.meee.com.tw/en2DRqI.png"
+  "https://i.meee.com.tw/xcQyznn.png",
+  "https://i.meee.com.tw/poZUWbN.png",
+  "https://i.meee.com.tw/xf2O7ar.png",
+  "https://i.meee.com.tw/7sET4hI.png",
+  "https://i.meee.com.tw/fT4wbwe.png",
+  "https://i.meee.com.tw/tbMKwEw.png",
+  "https://i.meee.com.tw/jlpOfgi.png",
+  "https://i.meee.com.tw/TFT3lgs.png",
+  "https://i.meee.com.tw/1nCpUFo.png",
+  "https://i.meee.com.tw/KzyQLLo.png",
+  "https://i.meee.com.tw/hiKmIhO.png"
 ];
 
 const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => (
@@ -84,16 +85,28 @@ const Sponsors: React.FC = () => {
               <SponsorCard key={`row1-${index}`} src={src} index={index} />
             ))}
           </div>
-          {/* Row 2: 4 items */}
+          {/* Row 2: 1 item */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {shuffledSponsors.slice(3, 7).map((src, index) => (
+            {shuffledSponsors.slice(3, 4).map((src, index) => (
               <SponsorCard key={`row2-${index}`} src={src} index={index + 3} />
             ))}
           </div>
           {/* Row 3: 3 items */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {shuffledSponsors.slice(7, 10).map((src, index) => (
-              <SponsorCard key={`row3-${index}`} src={src} index={index + 7} />
+            {shuffledSponsors.slice(4, 7).map((src, index) => (
+              <SponsorCard key={`row3-${index}`} src={src} index={index + 4} />
+            ))}
+          </div>
+          {/* Row 4: 1 item */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {shuffledSponsors.slice(7, 8).map((src, index) => (
+              <SponsorCard key={`row4-${index}`} src={src} index={index + 7} />
+            ))}
+          </div>
+          {/* Row 5: 3 items */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {shuffledSponsors.slice(8, 11).map((src, index) => (
+              <SponsorCard key={`row5-${index}`} src={src} index={index + 8} />
             ))}
           </div>
         </div>
