@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const sponsorImages = [
-  "https://i.meee.com.tw/xcQyznn.png",
-  "https://i.meee.com.tw/poZUWbN.png",
-  "https://i.meee.com.tw/xf2O7ar.png",
-  "https://i.meee.com.tw/7sET4hI.png",
-  "https://i.meee.com.tw/fT4wbwe.png",
-  "https://i.meee.com.tw/tbMKwEw.png",
-  "https://i.meee.com.tw/jlpOfgi.png",
+  "https://i.meee.com.tw/Yd3iFV5.png",
+  "https://i.meee.com.tw/eL4Fwvg.png",
+  "https://i.meee.com.tw/f6lwa4t.png",
+  "https://i.meee.com.tw/ccikQd2.png",
+  "https://i.meee.com.tw/VU5GBAd.png",
+  "https://i.meee.com.tw/NDvLrxk.png",
   "https://i.meee.com.tw/mB8L8au.png",
-  "https://i.meee.com.tw/1nCpUFo.png",
-  "https://i.meee.com.tw/KzyQLLo.png",
-  "https://i.meee.com.tw/hiKmIhO.png"
+  "https://i.meee.com.tw/FIwvadq.png",
+  "https://i.meee.com.tw/XoR2Sry.png",
+  "https://i.meee.com.tw/ZWh0WGC.png",
+  "https://i.meee.com.tw/6Ej4ZOi.png"
 ];
 
 const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => (
@@ -44,24 +44,10 @@ const Sponsors: React.FC = () => {
       return newArray;
     };
 
-    // Fix indices 0, 1 (Row 1) and 7 (Row 4)
-    const fixedIndices = [0, 1, 7];
-    const toShuffle = sponsorImages.filter((_, index) => !fixedIndices.includes(index));
-    const shuffled = shuffleArray(toShuffle);
-    
-    const finalArray = new Array(sponsorImages.length);
-    fixedIndices.forEach(idx => {
-      finalArray[idx] = sponsorImages[idx];
-    });
-    
-    let shuffleIdx = 0;
-    for (let i = 0; i < finalArray.length; i++) {
-      if (!fixedIndices.includes(i)) {
-        finalArray[i] = shuffled[shuffleIdx++];
-      }
-    }
-    
-    setShuffledSponsors(finalArray);
+    // Keep the first two fixed, shuffle the rest
+    const fixed = sponsorImages.slice(0, 2);
+    const toShuffle = sponsorImages.slice(2);
+    setShuffledSponsors([...fixed, ...shuffleArray(toShuffle)]);
   }, []);
 
   return (
