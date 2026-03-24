@@ -12,7 +12,8 @@ const sponsorImages = [
   "https://i.meee.com.tw/FIwvadq.png",
   "https://i.meee.com.tw/XoR2Sry.png",
   "https://i.meee.com.tw/ZWh0WGC.png",
-  "https://i.meee.com.tw/6Ej4ZOi.png"
+  "https://i.meee.com.tw/6Ej4ZOi.png",
+  "https://i.meee.com.tw/Y7mlQVP.png"
 ];
 
 const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => (
@@ -107,6 +108,12 @@ const Sponsors: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {shuffledSponsors.slice(8, 11).map((src, index) => (
               <SponsorCard key={`row5-${index}`} src={src} index={index + 8} />
+            ))}
+          </div>
+          {/* Row 6: 1 item */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            {shuffledSponsors.slice(11, 12).map((src, index) => (
+              <SponsorCard key={`row6-${index}`} src={src} index={index + 11} />
             ))}
           </div>
         </div>
