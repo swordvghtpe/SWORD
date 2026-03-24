@@ -9,7 +9,7 @@ const sponsorImages = [
   "https://i.meee.com.tw/fT4wbwe.png",
   "https://i.meee.com.tw/tbMKwEw.png",
   "https://i.meee.com.tw/jlpOfgi.png",
-  "https://i.meee.com.tw/TFT3lgs.png",
+  "https://i.meee.com.tw/mB8L8au.png",
   "https://i.meee.com.tw/1nCpUFo.png",
   "https://i.meee.com.tw/KzyQLLo.png",
   "https://i.meee.com.tw/hiKmIhO.png"
@@ -44,10 +44,24 @@ const Sponsors: React.FC = () => {
       return newArray;
     };
 
-    // Keep the first two fixed, shuffle the rest
-    const fixed = sponsorImages.slice(0, 2);
-    const toShuffle = sponsorImages.slice(2);
-    setShuffledSponsors([...fixed, ...shuffleArray(toShuffle)]);
+    // Fix indices 0, 1 (Row 1) and 7 (Row 4)
+    const fixedIndices = [0, 1, 7];
+    const toShuffle = sponsorImages.filter((_, index) => !fixedIndices.includes(index));
+    const shuffled = shuffleArray(toShuffle);
+    
+    const finalArray = new Array(sponsorImages.length);
+    fixedIndices.forEach(idx => {
+      finalArray[idx] = sponsorImages[idx];
+    });
+    
+    let shuffleIdx = 0;
+    for (let i = 0; i < finalArray.length; i++) {
+      if (!fixedIndices.includes(i)) {
+        finalArray[i] = shuffled[shuffleIdx++];
+      }
+    }
+    
+    setShuffledSponsors(finalArray);
   }, []);
 
   return (
