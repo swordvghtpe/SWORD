@@ -40,8 +40,8 @@ const speakersData: Speaker[] = [
     imageUrl: 'https://meee.com.tw/qJfO68E.jpg',
   },
   {
-    nameZh: '江榮山 教授',
-    nameEn: 'Prof. Rong-Shan Jiang',
+    nameZh: '江榮山 教授\n(花曼瑋 醫師代)',
+    nameEn: 'Prof. Rong-Shan Jiang\n(Dr. Man-Wei Hua)',
     titleZh: '',
     titleEn: '',
     affiliationZh: '台中童綜合醫院\n研發創新中心',
@@ -125,7 +125,7 @@ const SpeakerCard: React.FC<{ speaker: Speaker }> = ({ speaker }) => {
           />
       </div>
       <div className="flex-grow flex flex-col justify-center">
-          <h3 className="text-base md:text-xl font-black text-gray-900 mb-2 leading-tight">
+          <h3 className="text-base md:text-xl font-black text-gray-900 mb-2 leading-tight whitespace-pre-line">
             {t(speaker.nameZh, speaker.nameEn)}
           </h3>
           <div className="border-t border-gray-100 pt-3">
