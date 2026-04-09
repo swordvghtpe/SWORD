@@ -2,35 +2,59 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const sponsorImages = [
-  "https://i.meee.com.tw/Yd3iFV5.png",
-  "https://i.meee.com.tw/eL4Fwvg.png",
-  "https://i.meee.com.tw/f6lwa4t.png",
-  "https://i.meee.com.tw/ccikQd2.png",
-  "https://i.meee.com.tw/VU5GBAd.png",
-  "https://i.meee.com.tw/NDvLrxk.png",
-  "https://i.meee.com.tw/mB8L8au.png",
-  "https://i.meee.com.tw/FIwvadq.png",
-  "https://i.meee.com.tw/XoR2Sry.png",
-  "https://i.meee.com.tw/ZWh0WGC.png",
-  "https://i.meee.com.tw/6Ej4ZOi.png",
-  "https://i.meee.com.tw/Y7mlQVP.png",
-  "https://i.meee.com.tw/MPxx8W1.png"
+  "https://i.meee.com.tw/EQqr3ee.png",
+  "https://i.meee.com.tw/uKxduv5.png",
+  "https://i.meee.com.tw/MPxx8W1.png",
+  "https://i.meee.com.tw/LCL5Ncc.png",
+  "https://i.meee.com.tw/HmUC6D5.png",
+  "https://i.meee.com.tw/yiF2Qim.png",
+  "https://i.meee.com.tw/rAeB36z.png",
+  "https://i.meee.com.tw/tzrJkVL.png",
+  "https://i.meee.com.tw/0NCEFcC.png",
+  "https://i.meee.com.tw/1FixJUV.png",
+  "https://i.meee.com.tw/yG1fueX.png",
+  "https://i.meee.com.tw/iblnoFX.png",
+  "https://i.meee.com.tw/GHdYjgB.png",
+  "https://i.meee.com.tw/aehNVWd.png"
 ];
 
-const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => (
-  <div className="group relative flex items-center justify-center p-2 md:p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.15)] transition-all duration-500 transform hover:-translate-y-2 border border-white h-40 md:h-56 w-[calc(50%-12px)] sm:w-64 lg:w-72 overflow-hidden">
-    {/* Hover Glow Effect */}
-    <div className="absolute inset-0 bg-gradient-to-br from-orange-50/0 via-transparent to-blue-50/0 group-hover:from-orange-50/50 group-hover:to-blue-50/50 transition-all duration-500"></div>
-    
-    <img 
-      src={src} 
-      alt={`Sponsor ${index + 1}`} 
-      className="relative z-10 w-full h-full object-contain filter grayscale-[0.1] group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
-      referrerPolicy="no-referrer"
-      loading="lazy"
-    />
-  </div>
-);
+const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => {
+  const [imgSrc, setImgSrc] = useState(src);
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    setImgSrc(src);
+    setHasError(false);
+  }, [src]);
+
+  const handleError = () => {
+    if (!hasError) {
+      // If .png failed, try .jpg
+      if (src.endsWith('.png')) {
+        setImgSrc(src.replace('.png', '.jpg'));
+      } else if (src.endsWith('.jpg')) {
+        setImgSrc(src.replace('.jpg', '.png'));
+      }
+      setHasError(true);
+    }
+  };
+
+  return (
+    <div className="group relative flex items-center justify-center p-2 md:p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.15)] transition-all duration-500 transform hover:-translate-y-2 border border-white h-40 md:h-56 w-[calc(50%-12px)] sm:w-64 lg:w-72 overflow-hidden">
+      {/* Hover Glow Effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/0 via-transparent to-blue-50/0 group-hover:from-orange-50/50 group-hover:to-blue-50/50 transition-all duration-500"></div>
+      
+      <img 
+        src={imgSrc} 
+        alt={`Sponsor ${index + 1}`} 
+        className="relative z-10 w-full h-full object-contain filter grayscale-[0.1] group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+        referrerPolicy="no-referrer"
+        loading="lazy"
+        onError={handleError}
+      />
+    </div>
+  );
+};
 
 const Sponsors: React.FC = () => {
   const { t } = useLanguage();
@@ -46,10 +70,8 @@ const Sponsors: React.FC = () => {
       return newArray;
     };
 
-    // Keep the first two fixed, shuffle the rest
-    const fixed = sponsorImages.slice(0, 2);
-    const toShuffle = sponsorImages.slice(2);
-    setShuffledSponsors([...fixed, ...shuffleArray(toShuffle)]);
+    // Shuffle the entire array
+    setShuffledSponsors(shuffleArray(sponsorImages));
   }, []);
 
   return (
@@ -81,17 +103,17 @@ const Sponsors: React.FC = () => {
         </div>
 
         <div className="space-y-6 md:space-y-8">
-          {/* Main Grid for first 9 items */}
+          {/* Main Grid for first 10 items */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {shuffledSponsors.slice(0, 9).map((src, index) => (
+            {shuffledSponsors.slice(0, 10).map((src, index) => (
               <SponsorCard key={`main-${index}`} src={src} index={index} />
             ))}
           </div>
           
           {/* Last row for 4 items */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {shuffledSponsors.slice(9).map((src, index) => (
-              <SponsorCard key={`last-${index}`} src={src} index={index + 9} />
+            {shuffledSponsors.slice(10).map((src, index) => (
+              <SponsorCard key={`last-${index}`} src={src} index={index + 10} />
             ))}
           </div>
         </div>

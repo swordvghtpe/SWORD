@@ -21,9 +21,9 @@ const App: React.FC = () => {
           <WelcomeMessage />
           <Speakers />
           <Agenda />
-          <Sponsors />
           <Registration />
           <Venue />
+          <Sponsors />
         </main>
         <Footer />
       </div>
