@@ -28,7 +28,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '新加坡國立大學醫院\n耳鼻喉科',
     affiliationEn: 'National University Hospital, Singapore',
-    imageUrl: 'https://i.meee.com.tw/6iEiSjW.jpg',
+    imageUrl: 'https://i.meee.com.tw/Xfg0xbD.jpg',
   },
   {
     nameZh: '趙勻廷 主任',
