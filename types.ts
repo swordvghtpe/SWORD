@@ -6,6 +6,7 @@ export interface Speaker {
   affiliationZh: string;
   affiliationEn: string;
   imageUrl: string;
+  secondaryImageUrl?: string;
 }
 
 export interface AgendaItem {

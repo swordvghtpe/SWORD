@@ -10,7 +10,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '德國德勒斯登大學 耳鼻喉科部\n嗅味覺中心',
     affiliationEn: 'Technology University of Dresden, Germany',
-    imageUrl: 'https://meee.com.tw/lNXtFZm.jpg',
+    imageUrl: 'https://i.meee.com.tw/lNXtFZm.jpg',
   },
   {
     nameZh: 'Prof. Eri Mori',
@@ -19,7 +19,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '日本東京慈惠會醫科大學\n耳鼻喉科',
     affiliationEn: 'The Jikei University School of Medicine, Japan',
-    imageUrl: 'https://meee.com.tw/g4TyYoP.jpg',
+    imageUrl: 'https://i.meee.com.tw/g4TyYoP.jpg',
   },
   {
     nameZh: 'Dr. Xinni Xu',
@@ -28,7 +28,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '新加坡國立大學醫院\n耳鼻喉科',
     affiliationEn: 'National University Hospital, Singapore',
-    imageUrl: 'https://meee.com.tw/6iEiSjW.jpg',
+    imageUrl: 'https://i.meee.com.tw/6iEiSjW.jpg',
   },
   {
     nameZh: '趙勻廷 主任',
@@ -37,7 +37,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/qJfO68E.jpg',
+    imageUrl: 'https://i.meee.com.tw/qJfO68E.jpg',
   },
   {
     nameZh: '江榮山 教授\n(花曼瑋 醫師代)',
@@ -46,7 +46,8 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '台中童綜合醫院\n研發創新中心',
     affiliationEn: "Tungs' Metroharbor Hospital, Taiwan",
-    imageUrl: 'https://meee.com.tw/O5l75pm.jpg',
+    imageUrl: 'https://i.meee.com.tw/O5l75pm.jpg',
+    secondaryImageUrl: 'https://i.meee.com.tw/Rf9NaFc.jpg',
   },
   {
     nameZh: '沈炳宏 主任',
@@ -55,7 +56,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '台中光田綜合醫院\n鼻頭頸科',
     affiliationEn: 'Kuang Tien General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/DJ2Adhb.jpg',
+    imageUrl: 'https://i.meee.com.tw/DJ2Adhb.jpg',
   },
   {
     nameZh: '藍敏瑛 教授',
@@ -64,7 +65,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/XvmEusJ.jpg',
+    imageUrl: 'https://i.meee.com.tw/XvmEusJ.jpg',
   },
   {
     nameZh: '葉建甫 醫師',
@@ -73,7 +74,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/eBILrmF.jpg',
+    imageUrl: 'https://i.meee.com.tw/eBILrmF.jpg',
   },
   {
     nameZh: '洪莉婷 醫師',
@@ -82,7 +83,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺北榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taipei Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/8MxndVQ.jpg',
+    imageUrl: 'https://i.meee.com.tw/3PceDXg.png',
   },
   {
     nameZh: '王勁傑 醫師',
@@ -91,7 +92,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '臺中榮民總醫院\n鼻頭頸科',
     affiliationEn: 'Taichung Veterans General Hospital, Taiwan',
-    imageUrl: 'https://meee.com.tw/Tj5GITZ.jpg',
+    imageUrl: 'https://i.meee.com.tw/Tj5GITZ.jpg',
   },
   {
     nameZh: '林高宗 醫師',
@@ -100,7 +101,7 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '台大雲林分院\n耳鼻喉科',
     affiliationEn: 'NTU Hospital Yunlin Branch, Taiwan',
-    imageUrl: 'https://meee.com.tw/o8opkdo.jpg',
+    imageUrl: 'https://i.meee.com.tw/Qtpje6Z.png',
   },
   {
     nameZh: '劉秀月 教授',
@@ -109,20 +110,65 @@ const speakersData: Speaker[] = [
     titleEn: '',
     affiliationZh: '高雄醫學大學\n口腔衛生科學研究所',
     affiliationEn: 'Kaohsiung Medical University, Taiwan',
-    imageUrl: 'https://meee.com.tw/ZbnlCnt.jpg',
+    imageUrl: 'https://i.meee.com.tw/lksdAxJ.png',
   },
 ];
 
 const SpeakerCard: React.FC<{ speaker: Speaker }> = ({ speaker }) => {
   const { t } = useLanguage();
+  const [imgSrc, setImgSrc] = useState(speaker.imageUrl);
+  const [hasError, setHasError] = useState(false);
+  const [secImgSrc, setSecImgSrc] = useState(speaker.secondaryImageUrl);
+  const [secHasError, setSecHasError] = useState(false);
+
+  React.useEffect(() => {
+    setImgSrc(speaker.imageUrl);
+    setHasError(false);
+    setSecImgSrc(speaker.secondaryImageUrl);
+    setSecHasError(false);
+  }, [speaker.imageUrl, speaker.secondaryImageUrl]);
+
+  const handleError = () => {
+    if (!hasError) {
+      if (speaker.imageUrl.endsWith('.jpg')) {
+        setImgSrc(speaker.imageUrl.replace('.jpg', '.png'));
+      } else if (speaker.imageUrl.endsWith('.png')) {
+        setImgSrc(speaker.imageUrl.replace('.png', '.jpg'));
+      }
+      setHasError(true);
+    }
+  };
+
+  const handleSecError = () => {
+    if (!secHasError && speaker.secondaryImageUrl) {
+      if (speaker.secondaryImageUrl.endsWith('.jpg')) {
+        setSecImgSrc(speaker.secondaryImageUrl.replace('.jpg', '.png'));
+      } else if (speaker.secondaryImageUrl.endsWith('.png')) {
+        setSecImgSrc(speaker.secondaryImageUrl.replace('.png', '.jpg'));
+      }
+      setSecHasError(true);
+    }
+  };
+
   return (
     <div className="flex flex-col h-full bg-white/80 p-4 md:p-5 rounded-[1.5rem] shadow-sm border border-gray-100 group text-center">
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 flex items-center justify-center -space-x-4 mb-3">
           <img
-              className="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto mb-3 shadow-sm border-2 border-white object-cover object-top"
-              src={speaker.imageUrl}
+              className="w-24 h-24 md:w-28 md:h-28 rounded-full shadow-sm border-2 border-white object-cover object-top relative z-10"
+              src={imgSrc}
               alt={speaker.nameZh}
+              onError={handleError}
+              referrerPolicy="no-referrer"
           />
+          {speaker.secondaryImageUrl && (
+            <img
+              className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm border-2 border-white object-cover object-top relative z-0"
+              src={secImgSrc}
+              alt={`${speaker.nameZh} 2`}
+              onError={handleSecError}
+              referrerPolicy="no-referrer"
+            />
+          )}
       </div>
       <div className="flex-grow flex flex-col justify-center">
           <h3 className="text-base md:text-xl font-black text-gray-900 mb-2 leading-tight whitespace-pre-line">
