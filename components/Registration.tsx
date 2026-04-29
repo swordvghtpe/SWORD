@@ -170,7 +170,7 @@ const Registration: React.FC = () => {
             </div>
             
             <p className="text-center font-black text-red-600 bg-red-50 py-2 px-4 rounded-lg text-[9px] md:text-lg italic mb-6 whitespace-nowrap">
-                {t('※ 2026/04/30 前報名享早鳥價', '※ Early-bird through April 30, 2026.')}
+                {t('※ 2026/05/31 前報名享早鳥價', '※ Early-bird through May 31, 2026.')}
             </p>
 
             <div className="bg-[#f97316] p-4 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
