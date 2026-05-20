@@ -51,6 +51,9 @@ const Header: React.FC = () => {
 
         {/* Text Content */}
         <div className="text-center md:text-left">
+          <p className="text-base md:text-2xl font-black text-blue-600 mb-2 tracking-wide">
+            {t('中華醫學會 115 年度聯合學術研討會', 'Chinese Medical Association 115th Annual Joint Academic Conference')}
+          </p>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-4 text-black">
             SWORD-2026
           </h1>

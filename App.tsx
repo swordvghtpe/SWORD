@@ -5,6 +5,7 @@ import Header from './components/Header';
 import WelcomeMessage from './components/WelcomeMessage';
 import Speakers from './components/Speakers';
 import Agenda from './components/Agenda';
+import FloorMap from './components/FloorMap';
 import Sponsors from './components/Sponsors';
 import Registration from './components/Registration';
 import Venue from './components/Venue';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <WelcomeMessage />
           <Speakers />
           <Agenda />
+          <FloorMap />
           <Registration />
           <Venue />
           <Sponsors />

@@ -22,7 +22,7 @@ const pmAgendaEn: AgendaItem[] = [
   { time: '13:30-14:10', title: 'How to set up a smell and taste clinic?', speaker: 'Prof. Thomas Hummel' },
   { time: '14:10-14:20', title: 'Discussion and orientation', speaker: 'Dr. Yun-Ting Chao' },
   { time: '14:20-14:30', title: 'Prepare', isSpecial: true },
-  { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Subjective assessment (QoL), Trigeminal', '(D) Taste, Retronasal olfaction', '(E) Olfactory bulb, Animal/Cell', '(F) PRP, OT, automated testing'] },
+  { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Olfactory bulb, Animal/Cell', '(D) Taste, Retronasal olfaction', '(E) Subjective assessment (QoL), Trigeminal function', '(F) PRP, OT, automated testing'] },
   { time: '14:55-15:20', title: 'Workshop Rotation', description: ['Topics A - f'] },
   { time: '15:20-15:45', title: 'Workshop Rotation', description: ['Topics A - F'] },
   { time: '15:45-16:15', title: 'Coffee break', isBreak: true },
@@ -34,9 +34,9 @@ const pmAgendaEn: AgendaItem[] = [
 const workshopDataEn = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Lin", "Hsiu-Yun Fu"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
-  { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
+  { topic: "(C) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Prof. Hsiu-Yueh Liu"] },
-  { topic: "(E) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung"] },
+  { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
 ];
 
@@ -60,7 +60,7 @@ const pmAgendaZh: AgendaItem[] = [
   { time: '13:30-14:10', title: 'How to set up a smell and taste clinic?', speaker: 'Prof. Thomas Hummel' },
   { time: '14:10-14:20', title: 'Discussion and orientation', speaker: '趙勻廷 主任' },
   { time: '14:20-14:30', title: 'Prepare', isSpecial: true },
-  { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Subjective assessment (QoL), Trigeminal', '(D) Taste, Retronasal olfaction', '(E) Olfactory bulb, Animal/Cell', '(F) PRP, OT, automated testing'] },
+  { time: '14:30-14:55', title: 'Workshop Rotation', description: ['(A) Sniffin\' Sticks', '(B) TIBSIT, open essence', '(C) Olfactory bulb, Animal/Cell', '(D) Taste, Retronasal olfaction', '(E) Subjective assessment (QoL), Trigeminal function', '(F) PRP, OT, automated testing'] },
   { time: '14:55-15:20', title: 'Workshop Rotation', description: ['Topics A - F'] },
   { time: '15:20-15:45', title: 'Workshop Rotation', description: ['Topics A - F'] },
   { time: '15:45-16:15', title: 'Coffee break', isBreak: true },
@@ -72,9 +72,9 @@ const pmAgendaZh: AgendaItem[] = [
 const workshopDataZh = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Dr. Xinni Xu", "林高宗 醫師", "傅秀雲 技師"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["沈炳宏 主任", "Prof. Eri Mori"] },
-  { topic: "(C) Subjective assessment (QoL), Trigeminal", faculty: ["藍敏瑛 教授", "李文雅 醫師", "李依恬 技術員"] },
+  { topic: "(C) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["王勁傑 醫師", "劉秀月 教授"] },
-  { topic: "(E) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師"] },
+  { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["藍敏瑛 教授", "李文雅 醫師", "李依恬 技術員"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["趙勻廷 主任", "廖尹君 腦科學博士"] }
 ];
 
