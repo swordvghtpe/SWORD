@@ -9,6 +9,8 @@ import FloorMap from './components/FloorMap';
 import Sponsors from './components/Sponsors';
 import Registration from './components/Registration';
 import Venue from './components/Venue';
+import TrafficInfo from './components/TrafficInfo';
+import VenueLocation from './components/VenueLocation';
 import EarlyBirdBadge from './components/EarlyBirdBadge';
 import Footer from './components/Footer';
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -26,6 +28,8 @@ const App: React.FC = () => {
           <FloorMap />
           <Registration />
           <Venue />
+          <TrafficInfo />
+          <VenueLocation />
           <Sponsors />
         </main>
         <EarlyBirdBadge />

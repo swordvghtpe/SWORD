@@ -40,6 +40,8 @@ const Navbar: React.FC = () => {
     { href: '#floormap', label: t('大會平面圖', 'Floor Plan') },
     { href: '#registration', label: t('會議報名', 'Registration') },
     { href: '#venue', label: t('會議地點', 'Venue') },
+    { href: '#traffic', label: t('交通資訊', 'Traffic') },
+    { href: '#location', label: t('會場位置', 'Venue Location') },
     { href: '#sponsors', label: t('贊助廠商', 'Sponsors') },
   ];
 
