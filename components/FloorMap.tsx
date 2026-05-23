@@ -19,15 +19,12 @@ const FloorMap: React.FC = () => {
     <section id="floormap" className="py-16 md:py-24 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <div className="inline-block px-4 py-1.5 mb-4 text-xs font-black uppercase tracking-widest text-blue-600 bg-blue-100 rounded-full">
-            Venue Guide
-          </div>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tighter mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
             {t('大會平面圖', 'Floor Plan')}
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-orange-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg md:text-xl font-bold text-gray-700 max-w-2xl mx-auto">
+          <div className="w-12 h-1 bg-blue-600/30 mx-auto mt-3 rounded-full"></div>
+          <p className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
             {t('本研討會暨工作坊之場地配置圖', 'Venue layout and floor map for the Symposium & Workshop.')}
           </p>
         </div>

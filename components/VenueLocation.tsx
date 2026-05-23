@@ -4,7 +4,7 @@ import { MapPin, Navigation, Info } from 'lucide-react';
 
 const VenueLocation: React.FC = () => {
   const { t } = useLanguage();
-  const baseSrc = "https://i.meee.com.tw/BFOrHkL";
+  const baseSrc = "https://i.meee.com.tw/syJbFGj";
   const [imgSrc, setImgSrc] = useState(`${baseSrc}.png`);
   const [hasError, setHasError] = useState(false);
 
@@ -20,16 +20,12 @@ const VenueLocation: React.FC = () => {
     <section id="location" className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-100 rounded-full">
-            <MapPin className="w-4 h-4" />
-            <span>Map Location</span>
-          </div>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tighter mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
             {t('會場位置', 'Venue Location')}
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-blue-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg md:text-xl font-bold text-gray-700 max-w-2xl mx-auto">
+          <div className="w-12 h-1 bg-orange-[500]/30 mx-auto mt-3 rounded-full" style={{ backgroundColor: 'rgba(249, 115, 22, 0.3)' }}></div>
+          <p className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
             {t('會場於大樓與院內各區域之相對位置圖', 'Detailed location map within the main building of the venue.')}
           </p>
         </div>

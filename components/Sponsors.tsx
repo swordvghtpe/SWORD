@@ -82,23 +82,20 @@ const Sponsors: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-1.5 mb-4 text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-100 rounded-full">
-            Partnership
-          </div>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tighter mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
             {t('贊助廠商', 'Sponsors')}
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-blue-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg md:text-xl font-bold text-gray-700 max-w-2xl mx-auto">
+          <div className="w-12 h-1 bg-orange-[500]/30 mx-auto mt-3 rounded-full" style={{ backgroundColor: 'rgba(241, 90, 36, 0.3)' }}></div>
+          <p className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
             {t('感謝廠商參與SWORD-2026活動', 'We gratefully acknowledge all sponsors for their generous support and valuable participation in SWORD-2026.')}
           </p>
-          <div className="flex items-center justify-center gap-2 mt-4 text-gray-400">
-            <span className="w-8 h-[1px] bg-gray-300"></span>
-            <p className="text-sm md:text-base font-medium italic">
+          <div className="flex items-center justify-center gap-2 mt-3 text-gray-400">
+            <span className="w-6 h-[1px] bg-gray-300"></span>
+            <p className="text-xs md:text-sm font-medium italic">
               {t('由 AI 系統進行隨機排序', 'Randomly ordered by an AI system')}
             </p>
-            <span className="w-8 h-[1px] bg-gray-300"></span>
+            <span className="w-6 h-[1px] bg-gray-300"></span>
           </div>
         </div>
 

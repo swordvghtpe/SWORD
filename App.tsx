@@ -28,8 +28,8 @@ const App: React.FC = () => {
           <FloorMap />
           <Registration />
           <Venue />
-          <TrafficInfo />
           <VenueLocation />
+          <TrafficInfo />
           <Sponsors />
         </main>
         <EarlyBirdBadge />
