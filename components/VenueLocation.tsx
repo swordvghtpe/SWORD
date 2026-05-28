@@ -4,7 +4,7 @@ import { MapPin, Navigation, Info } from 'lucide-react';
 
 const VenueLocation: React.FC = () => {
   const { t } = useLanguage();
-  const baseSrc = "https://i.meee.com.tw/syJbFGj";
+  const baseSrc = "https://i.meee.com.tw/ApUfRkL";
   const [imgSrc, setImgSrc] = useState(`${baseSrc}.png`);
   const [hasError, setHasError] = useState(false);
 

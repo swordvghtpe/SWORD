@@ -34,8 +34,8 @@ const pmAgendaEn: AgendaItem[] = [
 const workshopDataEn = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Lin", "Hsiu-Yun Fu"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
-  { topic: "(C) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung"] },
-  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Prof. Hsiu-Yueh Liu"] },
+  { topic: "(C) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung", "Heather Grace Dulnuan"] },
+  { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Hsiu-Yueh Liu"] },
   { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
 ];
@@ -72,7 +72,7 @@ const pmAgendaZh: AgendaItem[] = [
 const workshopDataZh = [
   { topic: "(A) Sniffin' Sticks", faculty: ["Dr. Xinni Xu", "林高宗 醫師", "傅秀雲 技師"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["沈炳宏 主任", "Prof. Eri Mori"] },
-  { topic: "(C) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師"] },
+  { topic: "(C) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師", "Dr. Heather Grace Dulnuan"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["王勁傑 醫師", "劉秀月 教授"] },
   { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["藍敏瑛 教授", "李文雅 醫師", "李依恬 技術員"] },
   { topic: "(F) PRP, OT, automated testing", faculty: ["趙勻廷 主任", "廖尹君 腦科學博士"] }
@@ -202,7 +202,7 @@ const Agenda: React.FC = () => {
 
         <div className="mt-10 bg-white rounded-[2rem] shadow-xl overflow-hidden border border-blue-200">
             <div className="bg-blue-600 py-5 px-8">
-                <h3 className="text-base md:text-2xl font-black text-white flex items-center tracking-tight whitespace-nowrap">
+                <h3 className="text-base md:text-xl font-black text-white flex items-center tracking-tight whitespace-nowrap">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
