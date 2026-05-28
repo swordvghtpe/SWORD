@@ -25,11 +25,11 @@ const App: React.FC = () => {
           <WelcomeMessage />
           <Speakers />
           <Agenda />
-          <FloorMap />
           <Registration />
           <Venue />
-          <VenueLocation />
           <TrafficInfo />
+          <VenueLocation />
+          <FloorMap />
           <Sponsors />
         </main>
         <EarlyBirdBadge />

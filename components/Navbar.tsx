@@ -37,11 +37,11 @@ const Navbar: React.FC = () => {
     { href: '#welcome', label: t('歡迎詞', 'Welcome') },
     { href: '#speakers', label: t('研討會講師', 'Speakers') },
     { href: '#agenda', label: t('會議議程', 'Agenda') },
-    { href: '#floormap', label: t('大會平面圖', 'Floor Plan') },
     { href: '#registration', label: t('會議報名', 'Registration') },
     { href: '#venue', label: t('會議地點', 'Venue') },
-    { href: '#location', label: t('會場位置', 'Venue Location') },
     { href: '#traffic', label: t('交通資訊', 'Traffic') },
+    { href: '#location', label: t('會場位置', 'Venue Location') },
+    { href: '#floormap', label: t('大會平面圖', 'Floor Plan') },
     { href: '#sponsors', label: t('贊助廠商', 'Sponsors') },
   ];
 
