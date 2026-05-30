@@ -4,7 +4,7 @@ import { MapPin, Compass, Car } from 'lucide-react';
 
 const Venue: React.FC = () => {
   const { t } = useLanguage();
-  const baseTrafficSrc = "https://meee.com.tw/biDEVKA";
+  const baseTrafficSrc = "https://meee.com.tw/Rar2P9K";
   const [trafficImgSrc, setTrafficImgSrc] = useState(`${baseTrafficSrc}.png`);
   const [hasTrafficError, setHasTrafficError] = useState(false);
 
