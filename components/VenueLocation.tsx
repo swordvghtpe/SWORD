@@ -4,15 +4,17 @@ import { MapPin, Navigation, Info } from 'lucide-react';
 
 const VenueLocation: React.FC = () => {
   const { t } = useLanguage();
-  const baseSrc = "https://i.meee.com.tw/ApUfRkL";
-  const [imgSrc, setImgSrc] = useState(`${baseSrc}.png`);
-  const [hasError, setHasError] = useState(false);
+  const baseSrc = "https://meee.com.tw/m6uNMHF";
+  const [imgSrc, setImgSrc] = useState(baseSrc);
+  const [hasError, setHasError] = useState(0);
 
   const handleError = () => {
-    if (!hasError) {
-      // Try JPG fallback if PNG fails
+    if (hasError === 0) {
+      setImgSrc(`${baseSrc}.png`);
+      setHasError(1);
+    } else if (hasError === 1) {
       setImgSrc(`${baseSrc}.jpg`);
-      setHasError(true);
+      setHasError(2);
     }
   };
 
@@ -30,44 +32,9 @@ const VenueLocation: React.FC = () => {
           </p>
         </div>
 
-        {/* Both Maps: Venue Location & Hospital Map Side-By-Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Card 1: 院內地圖 */}
-          <div id="hospital-map-card" className="flex flex-col">
-            <div className="relative group p-4 bg-slate-50 rounded-[2rem] border border-gray-200/60 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col justify-between h-full">
-              <div>
-                <h3 className="text-sm md:text-lg font-black text-gray-900 mb-3 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-blue-600" />
-                  {t('院內地圖', 'Hospital Map')}
-                </h3>
-                <div className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100 p-2">
-                  <img 
-                    src="https://meee.com.tw/RSfci7b.jpg" 
-                    alt="Hospital Map" 
-                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
-                    referrerPolicy="no-referrer"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-
-              <div className="mt-4 flex justify-between items-center px-1">
-                <span className="text-[10px] md:text-xs text-gray-500 font-bold max-w-[60%] leading-tight">
-                  {t('※ 點擊按鈕在新頁面查看院內地圖', '※ Click button to view in a new tab.')}
-                </span>
-                <a 
-                  href="https://meee.com.tw/RSfci7b.jpg" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl text-[10px] md:text-xs shadow-md hover:shadow-lg transition-all"
-                >
-                  {t('檢視大圖', 'View Full Map')}
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: 會場位置 */}
+        {/* Venue Location Map - Standalone & Large */}
+        <div className="max-w-4xl mx-auto">
+          {/* Card: 會場位置 */}
           <div id="venue-location-card" className="flex flex-col">
             <div className="relative group p-4 bg-slate-50 rounded-[2rem] border border-gray-200/60 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col justify-between h-full">
               <div>
@@ -79,7 +46,7 @@ const VenueLocation: React.FC = () => {
                   <img 
                     src={imgSrc} 
                     alt="SWORD-2026 Venue Location Map" 
-                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
+                    className="max-w-full h-auto max-h-[75vh] md:max-h-[80vh] object-contain transition-transform duration-500 hover:scale-[1.01]"
                     referrerPolicy="no-referrer"
                     onError={handleError}
                     loading="lazy"
@@ -88,7 +55,7 @@ const VenueLocation: React.FC = () => {
               </div>
               
               <div className="mt-4 flex justify-between items-center px-1">
-                <span className="text-[10px] md:text-xs text-gray-500 font-bold max-w-[60%] leading-tight">
+                <span className="text-[10px] md:text-xs text-gray-500 font-bold max-w-[65%] leading-tight">
                   {t('※ 點擊按鈕在新頁面查看高解析位置地圖', '※ Click button to view in high resolution.')}
                 </span>
                 <a 
