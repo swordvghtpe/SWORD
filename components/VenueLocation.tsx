@@ -30,37 +30,76 @@ const VenueLocation: React.FC = () => {
           </p>
         </div>
 
-        {/* Venue Location Image Card */}
-        <div className="max-w-4xl mx-auto">
-          <div className="relative group p-4 bg-slate-50 rounded-[2rem] border border-gray-200/60 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl">
-            <div className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100">
-              <img 
-                src={imgSrc} 
-                alt="SWORD-2026 Venue Location Map" 
-                className="max-w-full h-auto max-h-[80vh] object-contain transition-transform duration-500 hover:scale-[1.01]"
-                referrerPolicy="no-referrer"
-                onError={handleError}
-                loading="lazy"
-              />
+        {/* Both Maps: Venue Location & Hospital Map Side-By-Side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Card 1: 院內地圖 */}
+          <div id="hospital-map-card" className="flex flex-col">
+            <div className="relative group p-4 bg-slate-50 rounded-[2rem] border border-gray-200/60 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col justify-between h-full">
+              <div>
+                <h3 className="text-sm md:text-lg font-black text-gray-900 mb-3 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-blue-600" />
+                  {t('院內地圖', 'Hospital Map')}
+                </h3>
+                <div className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100 p-2">
+                  <img 
+                    src="https://meee.com.tw/RSfci7b.jpg" 
+                    alt="Hospital Map" 
+                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-4 flex justify-between items-center px-1">
+                <span className="text-[10px] md:text-xs text-gray-500 font-bold max-w-[60%] leading-tight">
+                  {t('※ 點擊按鈕在新頁面查看院內地圖', '※ Click button to view in a new tab.')}
+                </span>
+                <a 
+                  href="https://meee.com.tw/RSfci7b.jpg" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl text-[10px] md:text-xs shadow-md hover:shadow-lg transition-all"
+                >
+                  {t('檢視大圖', 'View Full Map')}
+                </a>
+              </div>
             </div>
-            
-            {/* View full-size assistance button */}
-            <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-4 px-2">
-              <span className="text-xs md:text-sm text-gray-500 font-bold flex items-center gap-1.5">
-                <Navigation className="w-4 h-4 text-gray-400" />
-                {t('※ 點擊按鈕可於新頁面開啟高畫質位置地圖', '※ Click the button to open a high-definition venue map in a new window.')}
-              </span>
-              <a 
-                href={imgSrc} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white font-black rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all transform active:scale-95 text-center"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                {t('檢視原本圖片', 'View Original Map')}
-              </a>
+          </div>
+
+          {/* Card 2: 會場位置 */}
+          <div id="venue-location-card" className="flex flex-col">
+            <div className="relative group p-4 bg-slate-50 rounded-[2rem] border border-gray-200/60 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col justify-between h-full">
+              <div>
+                <h3 className="text-sm md:text-lg font-black text-gray-900 mb-3 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-orange-500" />
+                  {t('會場位置圖', 'Venue Location Map')}
+                </h3>
+                <div className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100 p-2">
+                  <img 
+                    src={imgSrc} 
+                    alt="SWORD-2026 Venue Location Map" 
+                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
+                    referrerPolicy="no-referrer"
+                    onError={handleError}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              
+              <div className="mt-4 flex justify-between items-center px-1">
+                <span className="text-[10px] md:text-xs text-gray-500 font-bold max-w-[60%] leading-tight">
+                  {t('※ 點擊按鈕在新頁面查看高解析位置地圖', '※ Click button to view in high resolution.')}
+                </span>
+                <a 
+                  href={imgSrc} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white font-black rounded-xl text-[10px] md:text-xs shadow-md hover:shadow-lg transition-all"
+                >
+                  {t('檢視大圖', 'View Full Map')}
+                </a>
+              </div>
             </div>
           </div>
         </div>

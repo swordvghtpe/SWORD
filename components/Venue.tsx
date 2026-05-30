@@ -69,45 +69,9 @@ const Venue: React.FC = () => {
           </div>
         </div>
 
-        {/* Side-by-Side Maps (並列) */}
-        <div id="maps-side-by-side" className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Card 1: 院內地圖 */}
-          <div id="hospital-map-card" className="flex flex-col">
-            <div id="hospital-map-bg" className="relative group p-4 bg-gray-50 rounded-[2rem] border border-gray-100 shadow-xl overflow-hidden flex flex-col justify-between h-full">
-              <div>
-                <h3 id="hospital-map-title" className="text-sm md:text-lg font-black text-gray-900 mb-3 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-blue-600" />
-                  {t('院內地圖', 'Hospital Map')}
-                </h3>
-                <div id="hospital-map-img-container" className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100 p-2">
-                  <img 
-                    id="hospital-map-img"
-                    src="https://meee.com.tw/RSfci7b.jpg" 
-                    alt="Hospital Map" 
-                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
-                    referrerPolicy="no-referrer"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div id="hospital-map-footer" className="mt-4 flex justify-between items-center px-1">
-                <span id="hospital-map-hint" className="text-[10px] md:text-xs text-gray-500 font-bold">
-                  {t('※ 點擊按鈕在新頁面查看院內地圖', '※ Click button to view in a new tab.')}
-                </span>
-                <a 
-                  id="hospital-map-link"
-                  href="https://meee.com.tw/RSfci7b.jpg" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl text-[10px] md:text-xs shadow-md hover:shadow-lg transition-all"
-                >
-                  {t('檢視大圖', 'View Full Map')}
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: 交通資訊導引 */}
+        {/* Center Map: 交通資訊導引 */}
+        <div id="maps-single-container" className="max-w-4xl mx-auto mb-16">
+          {/* Card: 交通資訊導引 */}
           <div id="traffic-guide-card" className="flex flex-col">
             <div id="traffic-guide-bg" className="relative group p-4 bg-gray-50 rounded-[2rem] border border-gray-100 shadow-xl overflow-hidden flex flex-col justify-between h-full">
               <div>
@@ -120,7 +84,7 @@ const Venue: React.FC = () => {
                     id="traffic-guide-img"
                     src={trafficImgSrc} 
                     alt="Traffic Guide" 
-                    className="max-w-full h-auto max-h-[50vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
+                    className="max-w-full h-auto max-h-[60vh] object-contain transition-transform duration-500 hover:scale-[1.02]"
                     referrerPolicy="no-referrer"
                     onError={handleTrafficError}
                     loading="lazy"
