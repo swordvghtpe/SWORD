@@ -24,7 +24,7 @@ const Venue: React.FC = () => {
         {/* Section Header */}
         <div id="venue-header" className="text-center mb-10">
           <h2 id="venue-title" className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter mb-4 whitespace-nowrap">
-            {t('會議地點', 'Conference Venue')}
+            {t('交通方式', 'Transportation')}
           </h2>
           <div id="venue-badge" className="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full font-black text-[10px] md:text-xl shadow-md">
             {t('醫學科技大樓 一樓大會議室', 'Medical Science & Technology Building, 1F')}

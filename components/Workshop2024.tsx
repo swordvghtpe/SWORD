@@ -10,7 +10,7 @@ const Workshop2024: React.FC = () => {
         {/* Section Header */}
         <div id="workshop2024-header" className="text-center mb-10">
           <h2 id="workshop2024-title" className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
-            {t('2024 TRS pre-congress olfactory workshop', '2024 TRS pre-congress olfactory workshop')}
+            {t('影片介紹', 'Video')}
           </h2>
           <div id="workshop2024-divider" className="w-12 h-1 bg-blue-600/30 mx-auto mt-3 rounded-full"></div>
           <p id="workshop2024-subtitle" className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
@@ -20,6 +20,11 @@ const Workshop2024: React.FC = () => {
 
         {/* Video Player Container */}
         <div id="workshop2024-video-container" className="max-w-4xl mx-auto px-2 md:px-0">
+          <div className="mb-6 text-center">
+            <h3 className="text-sm md:text-xl font-black text-blue-600 tracking-tight bg-blue-50 inline-block px-4 py-2 rounded-xl border border-blue-100 shadow-sm">
+              2024 TRS pre-congress olfactory workshop
+            </h3>
+          </div>
           <div id="workshop2024-video-aspect" className="relative aspect-video rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-2xl border-4 md:border-8 border-white bg-black transition-transform duration-500 hover:scale-[1.01]">
             <iframe
               id="workshop2024-video-iframe"

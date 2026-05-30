@@ -24,7 +24,7 @@ const VenueLocation: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
-            {t('會場位置', 'Venue Location')}
+            {t('會場位置', 'Venue')}
           </h2>
           <div className="w-12 h-1 bg-orange-[500]/30 mx-auto mt-3 rounded-full" style={{ backgroundColor: 'rgba(249, 115, 22, 0.3)' }}></div>
           <p className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ const VenueLocation: React.FC = () => {
           </p>
         </div>
 
-        {/* Venue Location Map - Standalone & Large */}
+        {/* Venue Map - Standalone & Large */}
         <div className="max-w-4xl mx-auto">
           {/* Card: 會場位置 */}
           <div id="venue-location-card" className="flex flex-col">
@@ -40,7 +40,7 @@ const VenueLocation: React.FC = () => {
               <div>
                 <h3 className="text-sm md:text-lg font-black text-gray-900 mb-3 flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-orange-500" />
-                  {t('會場位置圖', 'Venue Location Map')}
+                  {t('會場位置圖', 'Venue Map')}
                 </h3>
                 <div className="relative overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gray-100 p-2">
                   <img 
