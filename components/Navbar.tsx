@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
   };
 
   const navLinks = [
+    { href: '#workshop2024', label: t('2024-Workshop', '2024-Workshop') },
     { href: '#welcome', label: t('歡迎詞', 'Welcome') },
     { href: '#speakers', label: t('研討會講師', 'Speakers') },
     { href: '#agenda', label: t('會議議程', 'Agenda') },

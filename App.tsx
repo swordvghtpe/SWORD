@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import WelcomeMessage from './components/WelcomeMessage';
+import Workshop2024 from './components/Workshop2024';
 import Speakers from './components/Speakers';
 import Agenda from './components/Agenda';
 import FloorMap from './components/FloorMap';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Navbar />
         <Header />
         <main>
+          <Workshop2024 />
           <WelcomeMessage />
           <Speakers />
           <Agenda />
