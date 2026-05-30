@@ -12,10 +12,24 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('zh');
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('sword_language');
+      if (saved === 'zh' || saved === 'en') {
+        return saved as Language;
+      }
+    }
+    return 'zh';
+  });
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'zh' ? 'en' : 'zh'));
+    setLanguage((prev) => {
+      const next = prev === 'zh' ? 'en' : 'zh';
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('sword_language', next);
+      }
+      return next;
+    });
   };
 
   // Helper function for inline translation: t('中文', 'English')

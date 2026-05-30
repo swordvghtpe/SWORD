@@ -10,7 +10,6 @@ import FloorMap from './components/FloorMap';
 import Sponsors from './components/Sponsors';
 import Registration from './components/Registration';
 import Venue from './components/Venue';
-import TrafficInfo from './components/TrafficInfo';
 import VenueLocation from './components/VenueLocation';
 import EarlyBirdBadge from './components/EarlyBirdBadge';
 import Footer from './components/Footer';
@@ -23,13 +22,12 @@ const App: React.FC = () => {
         <Navbar />
         <Header />
         <main>
-          <Workshop2024 />
           <WelcomeMessage />
           <Speakers />
           <Agenda />
+          <Workshop2024 />
           <Registration />
           <Venue />
-          <TrafficInfo />
           <VenueLocation />
           <FloorMap />
           <Sponsors />
