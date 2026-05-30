@@ -10,11 +10,11 @@ const Workshop2024: React.FC = () => {
         {/* Section Header */}
         <div id="workshop2024-header" className="text-center mb-10">
           <h2 id="workshop2024-title" className="text-xl md:text-3xl font-black text-gray-900 tracking-tighter whitespace-nowrap">
-            {t('2024-Workshop', '2024-Workshop')}
+            {t('2024 TRS pre-congress olfactory workshop', '2024 TRS pre-congress olfactory workshop')}
           </h2>
           <div id="workshop2024-divider" className="w-12 h-1 bg-blue-600/30 mx-auto mt-3 rounded-full"></div>
           <p id="workshop2024-subtitle" className="mt-3 text-xs md:text-base text-gray-500 font-bold max-w-2xl mx-auto">
-            {t('歡迎觀看 2024 年工作坊之精彩影片與課程紀錄', 'Watch the highlights and recorded lectures from our 2024 Workshop.')}
+            {t('歡迎觀看 2024 年工作坊之精彩影片與課程紀錄', 'Watch the highlights and recorded lectures from our 2024 TRS pre-congress olfactory workshop.')}
           </p>
         </div>
 

@@ -37,7 +37,11 @@ const Navbar: React.FC = () => {
     { href: '#welcome', label: t('歡迎詞', 'Welcome') },
     { href: '#speakers', label: t('研討會講師', 'Speakers') },
     { href: '#agenda', label: t('會議議程', 'Agenda') },
-    { href: '#workshop2024', label: t('2024-Workshop', '2024-Workshop') },
+    { 
+      href: '#workshop2024', 
+      label: t('2024 TRS pre-congress olfactory workshop', '2024 TRS pre-congress olfactory workshop'),
+      isLong: true
+    },
     { href: '#registration', label: t('會議報名', 'Registration') },
     { href: '#venue', label: t('會議地點', 'Venue') },
     { href: '#location', label: t('會場位置', 'Venue Location') },
@@ -72,9 +76,16 @@ const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => scrollToSection(e, link.href)}
-                  className="px-1.5 xl:px-2.5 py-2 rounded-lg text-xs xl:text-sm font-black cursor-pointer transition-all text-black hover:text-blue-600 whitespace-nowrap"
+                  className={`px-1.5 xl:px-2.5 py-1 rounded-lg font-black cursor-pointer transition-all text-black hover:text-blue-600 text-center flex items-center justify-center ${link.isLong ? 'text-[10.5px] xl:text-xs whitespace-normal leading-[1.15] max-w-[130px] xl:max-w-[160px]' : 'text-xs xl:text-sm whitespace-nowrap'}`}
                 >
-                  {link.label}
+                  {link.isLong ? (
+                    <div>
+                      <div>2024 TRS pre-congress</div>
+                      <div>olfactory workshop</div>
+                    </div>
+                  ) : (
+                    link.label
+                  )}
                 </a>
               ))}
               
@@ -125,9 +136,16 @@ const Navbar: React.FC = () => {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
-                className="text-black font-black block px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm whitespace-nowrap"
+                className={`text-black font-black block px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm ${link.isLong ? 'whitespace-normal leading-snug' : 'whitespace-nowrap'}`}
               >
-                {link.label}
+                {link.isLong ? (
+                  <div>
+                    <div>2024 TRS pre-congress</div>
+                    <div>olfactory workshop</div>
+                  </div>
+                ) : (
+                  link.label
+                )}
               </a>
             ))}
             <div className="px-4 pt-4 border-t border-gray-100">
