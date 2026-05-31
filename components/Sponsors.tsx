@@ -115,36 +115,7 @@ const Sponsors: React.FC = () => {
           </div>
         </div>
 
-        {/* Sponsorship Bank Info */}
-        <div className="mt-16 max-w-xl mx-auto">
-          <div className="relative p-6 md:p-8 bg-white/90 backdrop-blur-md rounded-[2rem] border border-orange-150/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.1)] transition-all duration-300">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-400/10 to-blue-400/10 rounded-bl-[2rem] rounded-tr-[2rem] pointer-events-none"></div>
-            
-            <h3 className="text-xl md:text-2xl font-black text-gray-900 text-center mb-6 flex items-center justify-center gap-2">
-              <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-              </svg>
-              {t('贊助匯款資訊', 'Sponsorship Remittance Info')}
-            </h3>
 
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-gray-50/50 rounded-xl border border-gray-100">
-                <span className="text-sm font-bold text-gray-500">{t('戶名', 'Account Name')}</span>
-                <span className="text-base md:text-lg font-black text-gray-900 mt-1 sm:mt-0">{t('中華醫學會', 'Chinese Medical Association')}</span>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-gray-50/50 rounded-xl border border-gray-100">
-                <span className="text-sm font-bold text-gray-500">{t('銀行 / 分行', 'Bank / Branch')}</span>
-                <span className="text-base md:text-lg font-black text-gray-900 mt-1 sm:mt-0">{t('合作金庫 石牌分行', 'Taiwan Cooperative Bank, Shipai Branch')}</span>
-              </div>
-
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-gray-50/50 rounded-xl border border-gray-100">
-                <span className="text-sm font-bold text-gray-500">{t('匯款帳號', 'Account Number')}</span>
-                <span className="text-base md:text-xl font-mono font-black text-blue-600 tracking-wider mt-1 sm:mt-0">1427-765-210957</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
