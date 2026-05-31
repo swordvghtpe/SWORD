@@ -181,26 +181,26 @@ const Registration: React.FC = () => {
                 <div className="grid grid-cols-1 gap-4 text-xs md:text-lg text-left max-w-xl mx-auto">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
                     <span className="opacity-90 font-bold">{t('戶名', 'Account Name')}</span>
-                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('中華醫學會', 'Chinese Medical Association')}</span>
+                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('中華醫學會', 'Taiwan Rhinology Society')}</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
                     <span className="opacity-90 font-bold">{t('銀行 / 分行', 'Bank / Branch')}</span>
-                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('合作金庫 石牌分行', 'Taiwan Cooperative Bank, Shipai Branch')}</span>
+                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('合作金庫 石牌分行', 'Taiwan Cooperative Bank Taida Branch')}</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
                     <span className="opacity-90 font-bold">{t('匯款帳號', 'Account Number')}</span>
-                    <span className="font-mono font-black text-base md:text-2xl mt-1 sm:mt-0 tracking-wider">1427-765-210957</span>
+                    <span className="font-mono font-black text-base md:text-2xl mt-1 sm:mt-0 tracking-wider">{t('1427-765-210957', '1346-717-036449')}</span>
                   </div>
                 </div>
               </div>
             ) : (
               <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
                 <h4 id="remittance-title-intl" className="text-sm md:text-2xl font-black border-b border-white/20 pb-2 mb-4 whitespace-nowrap text-center">
-                  Foreign Remittance▼
+                  Foreign Remittance (國外匯款)
                 </h4>
                 <div className="grid grid-cols-1 gap-4 text-xs md:text-base text-left max-w-xl mx-auto">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">Swift Code</span>
+                    <span className="opacity-90 font-bold">Swift</span>
                     <span className="font-mono font-black text-sm md:text-lg mt-1 sm:mt-0 tracking-wider">TACBTWTP</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
