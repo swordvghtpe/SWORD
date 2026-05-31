@@ -173,28 +173,55 @@ const Registration: React.FC = () => {
                 {t('※ 2026/05/31 前報名享早鳥價', '※ Early-bird through May 31, 2026.')}
             </p>
 
-            <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8 text-center flex flex-col items-center">
-              <h4 className="text-base md:text-2xl font-black border-b border-white/20 pb-2 mb-4 w-full whitespace-nowrap">
-                {t('匯款與報名資訊', 'Remittance & Registration Info')}
-              </h4>
-              <p className="text-xs md:text-lg font-bold opacity-90 mb-6 max-w-xl leading-relaxed">
-                {t(
-                  '詳細匯款資訊與相關說明，請至台灣鼻科醫學會官方網站查詢。',
-                  'For detailed remittance information and instructions, please visit the official website of the Taiwan Rhinology Society.'
-                )}
-              </p>
-              <a 
-                href="https://trs.org.tw/"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white hover:bg-orange-50 text-orange-600 font-extrabold px-6 py-3 rounded-xl text-xs md:text-lg shadow-md hover:shadow-lg transition-all active:scale-95 duration-200"
-              >
-                <span>trs.org.tw</span>
-                <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
+            {activeTab === 'domestic' ? (
+              <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
+                <h4 id="remittance-title-domestic" className="text-sm md:text-2xl font-black border-b border-white/20 pb-2 mb-4 whitespace-nowrap text-center">
+                  {t('匯款資訊', 'Remittance Info')}
+                </h4>
+                <div className="grid grid-cols-1 gap-4 text-xs md:text-lg text-left max-w-xl mx-auto">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">{t('戶名', 'Account Name')}</span>
+                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('中華醫學會', 'Chinese Medical Association')}</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">{t('銀行 / 分行', 'Bank / Branch')}</span>
+                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('合作金庫 石牌分行', 'Taiwan Cooperative Bank, Shipai Branch')}</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">{t('匯款帳號', 'Account Number')}</span>
+                    <span className="font-mono font-black text-base md:text-2xl mt-1 sm:mt-0 tracking-wider">1427-765-210957</span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
+                <h4 id="remittance-title-intl" className="text-sm md:text-2xl font-black border-b border-white/20 pb-2 mb-4 whitespace-nowrap text-center">
+                  Foreign Remittance▼
+                </h4>
+                <div className="grid grid-cols-1 gap-4 text-xs md:text-base text-left max-w-xl mx-auto">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">Swift Code</span>
+                    <span className="font-mono font-black text-sm md:text-lg mt-1 sm:mt-0 tracking-wider">TACBTWTP</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">Bank Name</span>
+                    <span className="font-black text-sm md:text-lg mt-1 sm:mt-0">Taiwan Cooperative Bank Taida Branch</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold shrink-0">Bank Venue</span>
+                    <span className="font-bold text-xs md:text-sm mt-1 sm:mt-0 text-left sm:text-right md:max-w-[70%]">B1 No.7 Jhongshan S. Rd. Taipei, Taiwan (R.O.C)</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">Account Name</span>
+                    <span className="font-black text-sm md:text-lg mt-1 sm:mt-0">Taiwan Rhinology Society</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
+                    <span className="opacity-90 font-bold">Account No</span>
+                    <span className="font-mono font-black text-base md:text-xl mt-1 sm:mt-0 tracking-wider">1346-717-036449</span>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="text-center">
                 <button onClick={() => setShowModal(true)} className="bg-orange-600 hover:bg-orange-700 text-white font-black py-3 px-8 rounded-full transition-all shadow-lg text-sm md:text-2xl active:scale-95 whitespace-nowrap">
