@@ -17,7 +17,6 @@ const internationalFees = [
 
 interface FormData {
     name: string;
-    englishName: string;
     email: string;
     phone: string;
     organization: string;
@@ -38,7 +37,6 @@ const Registration: React.FC = () => {
   
   const [formData, setFormData] = useState<FormData>({
     name: '',
-    englishName: '',
     email: '',
     phone: '',
     organization: '',
@@ -116,7 +114,7 @@ const Registration: React.FC = () => {
                 setSubmitStatus('idle'); 
                 setFileName('');
                 setFormData({
-                    name: '', englishName: '', email: '', phone: '', organization: '',
+                    name: '', email: '', phone: '', organization: '',
                     category: language === 'zh' ? '住院醫師' : 'Resident',
                     dietary: language === 'zh' ? '葷食' : 'Standard',
                     remittanceAccountSuffix: '', receiptFile: '', note: ''
@@ -275,20 +273,14 @@ const Registration: React.FC = () => {
                                 <input required name="name" type="text" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-xl text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
                             </div>
                             <div>
-                                <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('英文姓名（請填寫與護照相同之羅馬拼音）', 'English Name (Please fill in the Roman pinyin same as passport)')}</label>
-                                <input required name="englishName" type="text" value={formData.englishName} onChange={handleInputChange} placeholder="e.g. WANG, TA-MING" className="w-full px-4 py-2 border rounded-xl text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
-                            </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
                                 <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('電話', 'Phone')}</label>
                                 <input required name="phone" type="tel" value={formData.phone} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-xl text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
                             </div>
-                            <div>
-                                <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('Email', 'Email')}</label>
-                                <input required name="email" type="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-xl text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
-                            </div>
+                        </div>
+
+                        <div>
+                            <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('Email', 'Email')}</label>
+                            <input required name="email" type="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-xl text-sm focus:ring-2 focus:ring-orange-500 outline-none" />
                         </div>
 
                         <div>
