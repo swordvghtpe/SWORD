@@ -11,7 +11,6 @@ import Sponsors from './components/Sponsors';
 import Registration from './components/Registration';
 import Venue from './components/Venue';
 import VenueLocation from './components/VenueLocation';
-import EarlyBirdBadge from './components/EarlyBirdBadge';
 import Footer from './components/Footer';
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -32,7 +31,6 @@ const App: React.FC = () => {
           <FloorMap />
           <Sponsors />
         </main>
-        <EarlyBirdBadge />
         <Footer />
       </div>
     </LanguageProvider>

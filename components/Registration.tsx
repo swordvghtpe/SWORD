@@ -6,13 +6,13 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYXQFkSwYRqv
 // ---------------------
 
 const domesticFees = [
-  { titleZh: '住院醫師', titleEn: 'Resident', earlyBird: 'NT$ 2,500', regular: 'NT$ 3,500' },
-  { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', earlyBird: 'NT$ 3,500', regular: 'NT$ 4,500' },
-  { titleZh: '主治醫師/其他專業人士', titleEn: 'Physician / Other Professionals', earlyBird: 'NT$ 4,500', regular: 'NT$ 5,500' },
+  { titleZh: '住院醫師', titleEn: 'Resident', regular: 'NT$ 3,500' },
+  { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', regular: 'NT$ 4,500' },
+  { titleZh: '主治醫師/其他專業人士', titleEn: 'Physician / Other Professionals', regular: 'NT$ 5,500' },
 ];
 
 const internationalFees = [
-    { title: 'Attendee', earlyBird: 'USD $ 100', regular: 'USD $ 150' },
+    { title: 'Attendee', regular: 'USD $ 150' },
 ];
 
 interface FormData {
@@ -151,8 +151,7 @@ const Registration: React.FC = () => {
                 <thead>
                   <tr className="bg-orange-50 text-orange-900">
                     <th className="px-0.5 py-3 font-black text-[10px] md:text-lg whitespace-nowrap">{t('職稱', 'Title')}</th>
-                    <th className="px-0.5 py-3 font-black text-[10px] md:text-lg whitespace-nowrap">{t('早鳥價', 'Early')}</th>
-                    <th className="px-0.5 py-3 font-black text-[10px] md:text-lg whitespace-nowrap">{t('原價', 'Regular')}</th>
+                    <th className="px-0.5 py-3 font-black text-[10px] md:text-lg whitespace-nowrap">{t('報名費用', 'Registration Fee')}</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white">
@@ -161,17 +160,12 @@ const Registration: React.FC = () => {
                       <td className="px-0.5 py-3 font-bold text-gray-800 text-[10px] md:text-lg whitespace-pre-line leading-tight">
                         {t((fee as any).titleZh || (fee as any).title, (fee as any).titleEn || (fee as any).title)}
                       </td>
-                      <td className="px-0.5 py-3 font-black text-[11px] md:text-2xl text-orange-600 whitespace-nowrap">{fee.earlyBird}</td>
-                      <td className="px-0.5 py-3 font-black text-[11px] md:text-2xl text-gray-300 whitespace-nowrap">{fee.regular}</td>
+                      <td className="px-0.5 py-3 font-black text-[11px] md:text-2xl text-orange-600 whitespace-nowrap">{fee.regular}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            
-            <p className="text-center font-black text-red-600 bg-red-50 py-2 px-4 rounded-lg text-[9px] md:text-lg italic mb-6 whitespace-nowrap">
-                {t('※ 2026/05/31 前報名享早鳥價', '※ Early-bird through May 31, 2026.')}
-            </p>
 
             {activeTab === 'domestic' ? (
               <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
