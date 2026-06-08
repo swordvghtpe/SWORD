@@ -15,7 +15,8 @@ const sponsorImages = [
   "https://i.meee.com.tw/yG1fueX.png",
   "https://i.meee.com.tw/iblnoFX.png",
   "https://i.meee.com.tw/GHdYjgB.png",
-  "https://i.meee.com.tw/aehNVWd.png"
+  "https://i.meee.com.tw/aehNVWd.png",
+  "https://i.meee.com.tw/BG9qoUT.jpg"
 ];
 
 const SponsorCard: React.FC<{ src: string; index: number }> = ({ src, index }) => {
