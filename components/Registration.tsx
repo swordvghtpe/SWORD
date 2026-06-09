@@ -232,7 +232,7 @@ const Registration: React.FC = () => {
                 <p className="mt-3 text-[10px] md:text-sm font-bold text-red-500 leading-relaxed max-w-xl mx-auto">
                     {t(
                       '※ 活動前兩週起恕不退款；遇天災等不可抗力因素，主辦單位保留最終處理及決定權。',
-                      '※ No refunds starting two weeks prior to the event. In case of natural disasters or other force majeure factors, the organizer reserves the right of final interpretation and decision.'
+                      '※ No refunds within two weeks of the event. The organizer reserves the right to make final decisions in cases of force majeure.'
                     )}
                 </p>
             </div>
