@@ -213,8 +213,14 @@ const Venue: React.FC = () => {
             </div>
             
             <div id="parking-notes" className="mt-8 text-center">
-              <p id="parking-notes-text" className="text-gray-400 text-[10px] md:text-sm font-bold italic">
+              <p id="parking-notes-text" className="text-gray-400 text-[10px] md:text-sm font-bold italic mb-2">
                 {t('※ 會議期間車位有限，建議多加利用接駁車或大眾運輸工具', '※ Parking is limited; public transport is highly recommended.')}
+              </p>
+              <p id="parking-discount-text" className="text-red-600 text-xs md:text-base font-black leading-relaxed">
+                {t(
+                  '※ 6/27研討會當天，臺北榮總提供停車費半價優惠。請至報到處領取優惠券',
+                  '※ On the day of the symposium (6/27), Taipei Veterans General Hospital offers a 50% discount on parking. Please obtain the discount coupon at the registration desk.'
+                )}
               </p>
             </div>
           </div>
