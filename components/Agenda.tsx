@@ -245,7 +245,7 @@ const Agenda: React.FC = () => {
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="rounded-2xl overflow-hidden shadow-sm border border-blue-100 bg-white p-2 md:p-4">
                             <img 
-                                src="https://i.meee.com.tw/G7t8Gve.png" 
+                                src="https://i.meee.com.tw/QQhXZUd.png" 
                                 alt={t('輪站的順序 A', 'Station Rotation Sequence A')} 
                                 className="w-full h-auto object-contain rounded-xl mx-auto"
                                 referrerPolicy="no-referrer"
@@ -253,7 +253,7 @@ const Agenda: React.FC = () => {
                         </div>
                         <div className="rounded-2xl overflow-hidden shadow-sm border border-blue-100 bg-white p-2 md:p-4">
                             <img 
-                                src="https://i.meee.com.tw/QQhXZUd.png" 
+                                src="https://i.meee.com.tw/G7t8Gve.png" 
                                 alt={t('輪站的順序 B', 'Station Rotation Sequence B')} 
                                 className="w-full h-auto object-contain rounded-xl mx-auto"
                                 referrerPolicy="no-referrer"
