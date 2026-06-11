@@ -231,6 +231,26 @@ const Agenda: React.FC = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* Station Rotation Sequence */}
+                <div className="mt-12 border-t border-blue-100 pt-8">
+                    <div className="bg-blue-600 py-4 px-6 rounded-2xl mb-6 max-w-4xl mx-auto shadow-sm">
+                        <h4 className="text-base md:text-xl font-black text-white flex items-center justify-center gap-2 tracking-tight whitespace-nowrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 7.89M9 11l3 3 6-6" />
+                            </svg>
+                            {t('輪站的順序', 'Station Rotation Sequence')}
+                        </h4>
+                    </div>
+                    <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-sm border border-blue-100 bg-white p-2 md:p-4">
+                        <img 
+                            src="https://i.meee.com.tw/G7t8Gve.png" 
+                            alt={t('輪站的順序', 'Station Rotation Sequence')} 
+                            className="w-full h-auto object-contain rounded-xl mx-auto"
+                            referrerPolicy="no-referrer"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
 
