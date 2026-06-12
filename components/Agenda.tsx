@@ -37,7 +37,7 @@ const workshopDataEn = [
   { topic: "(C) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung", "Heather Grace Dulnuan"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Hsiu-Yueh Liu"] },
   { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["Ming-Ying Lan", "Wen-Ya Lee", "Yi-Tien Li"] },
-  { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Yin-Chun Liao"] }
+  { topic: "(F) PRP, OT, automated testing", faculty: ["Yun-Ting Chao", "Man-Wei Hua", "Yin-Chun Liao"] }
 ];
 
 // --- Chinese Data ---
@@ -75,7 +75,7 @@ const workshopDataZh = [
   { topic: "(C) Olfactory bulb, Animal/Cell", faculty: ["葉建甫 醫師", "洪莉婷 醫師", "Dr. Heather Grace Dulnuan"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["王勁傑 醫師", "劉秀月 教授"] },
   { topic: "(E) Subjective assessment (QoL), Trigeminal function", faculty: ["藍敏瑛 教授", "李文雅 醫師", "李依恬 技術員"] },
-  { topic: "(F) PRP, OT, automated testing", faculty: ["趙勻廷 主任", "廖尹君 腦科學博士"] }
+  { topic: "(F) PRP, OT, automated testing", faculty: ["趙勻廷 主任", "花曼瑋 醫師", "廖尹君 腦科學博士"] }
 ];
 
 const AgendaRow: React.FC<{ item: AgendaItem; theme: 'yellow' | 'green'; lang: 'zh' | 'en' }> = ({ item, theme, lang }) => {
