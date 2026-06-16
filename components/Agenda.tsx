@@ -32,7 +32,7 @@ const pmAgendaEn: AgendaItem[] = [
 ];
 
 const workshopDataEn = [
-  { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Lin", "Hsiu-Yun Fu"] },
+  { topic: "(A) Sniffin' Sticks", faculty: ["Xinni Xu", "Kao-Tsung Lin", "Xiu-Yun Fu"] },
   { topic: "(B) TIBSIT, open essence", faculty: ["Ping-Hung Shen", "Eri Mori"] },
   { topic: "(C) Olfactory bulb measurement, Animal/Cell Study", faculty: ["Chien-Fu Yeh", "Li-Ting Hung", "Heather Grace Dulnuan"] },
   { topic: "(D) Taste, Retronasal olfaction", faculty: ["Jing-Jie Wang", "Hsiu-Yueh Liu"] },
