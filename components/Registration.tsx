@@ -95,10 +95,6 @@ const Registration: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.receiptFile) {
-        setSubmitStatus('validation-error');
-        return;
-    }
     setIsSubmitting(true);
     try {
         const response = await fetch(GOOGLE_SCRIPT_URL, {
@@ -167,57 +163,7 @@ const Registration: React.FC = () => {
               </table>
             </div>
 
-            {activeTab === 'domestic' ? (
-              <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
-                <h4 id="remittance-title-domestic" className="text-sm md:text-2xl font-black border-b border-white/20 pb-2 mb-4 whitespace-nowrap text-center">
-                  {t('匯款資訊', 'Remittance Info')}
-                </h4>
-                <div className="grid grid-cols-1 gap-4 text-xs md:text-lg text-left max-w-xl mx-auto">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">{t('戶名', 'Account Name')}</span>
-                    <span className="font-black text-sm md:text-xl mt-1 sm:mt-0">{t('台灣鼻科醫學會', 'Taiwan Rhinology Society')}</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">{t('郵政劃撥帳號', 'Postal Account')}</span>
-                    <span className="font-mono font-black text-base md:text-2xl mt-1 sm:mt-0 tracking-wider">31617274</span>
-                  </div>
-                  <div className="p-3.5 bg-white/5 rounded-xl border border-white/5 text-center text-xs md:text-sm font-bold">
-                    {t(
-                      '若需要其他帳戶轉帳 請email：sword.vghtpe@gmail.com',
-                      'For other bank transfers, please email: sword.vghtpe@gmail.com'
-                    )}
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="bg-[#f97316] p-6 md:p-8 rounded-[1.2rem] text-white shadow-lg mb-8">
-                <h4 id="remittance-title-intl" className="text-sm md:text-2xl font-black border-b border-white/20 pb-2 mb-4 whitespace-nowrap text-center">
-                  Foreign Remittance (國外匯款)
-                </h4>
-                <div className="grid grid-cols-1 gap-4 text-xs md:text-base text-left max-w-xl mx-auto">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">Swift</span>
-                    <span className="font-mono font-black text-sm md:text-lg mt-1 sm:mt-0 tracking-wider">TACBTWTP</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">Bank Name</span>
-                    <span className="font-black text-sm md:text-lg mt-1 sm:mt-0">Taiwan Cooperative Bank Taida Branch</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold shrink-0">Bank Venue</span>
-                    <span className="font-bold text-xs md:text-sm mt-1 sm:mt-0 text-left sm:text-right md:max-w-[70%]">B1 No.7 Jhongshan S. Rd. Taipei, Taiwan (R.O.C)</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">Account Name</span>
-                    <span className="font-black text-sm md:text-lg mt-1 sm:mt-0">Taiwan Rhinology Society</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white/10 rounded-xl border border-white/10">
-                    <span className="opacity-90 font-bold">Account No</span>
-                    <span className="font-mono font-black text-base md:text-xl mt-1 sm:mt-0 tracking-wider">1346-717-036449</span>
-                  </div>
-                </div>
-              </div>
-            )}
+
 
             <div className="text-center">
                 <button onClick={() => setShowModal(true)} className="bg-orange-600 hover:bg-orange-700 text-white font-black py-3 px-8 rounded-full transition-all shadow-lg text-sm md:text-2xl active:scale-95 whitespace-nowrap">
@@ -247,7 +193,6 @@ const Registration: React.FC = () => {
             <div className="p-6 border-b border-gray-100 flex justify-between items-center">
                 <div>
                     <h3 className="text-xl font-black text-gray-900">{t('報名表單', 'Registration Form')}</h3>
-                    <p className="text-orange-600 font-bold text-xs mt-1">{t('請先完成匯款，再填寫此表單。', 'Please complete payment first.')}</p>
                 </div>
                 {!isSubmitting && (
                     <button onClick={() => setShowModal(false)} className="text-gray-400 hover:text-gray-600">
@@ -263,7 +208,7 @@ const Registration: React.FC = () => {
                             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                         </div>
                         <h4 className="text-xl font-black text-gray-900 mb-2">{t('報名已送出！', 'Success!')}</h4>
-                        <p className="text-gray-500 font-bold">{t('我們將在審核匯款後寄發確認信。', 'Confirmation email will be sent after review.')}</p>
+                        <p className="text-gray-500 font-bold">{t('我們將寄發確認信。', 'Confirmation email will be sent.')}</p>
                     </div>
                 ) : (
                     <>
@@ -310,24 +255,6 @@ const Registration: React.FC = () => {
                                     <option value={t('素食', 'Vegetarian')}>{t('素食', 'Vegetarian')}</option>
                                 </select>
                             </div>
-                        </div>
-
-                        <div>
-                            <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('匯款帳號末五碼', 'Last 5 Digits of Account')}</label>
-                            <input required name="remittanceAccountSuffix" type="text" maxLength={5} value={formData.remittanceAccountSuffix} onChange={handleInputChange} placeholder="00000" className="w-full px-4 py-2 border rounded-xl text-sm font-mono focus:ring-2 focus:ring-orange-500 outline-none" />
-                        </div>
-
-                        <div>
-                            <label className="block text-[10px] font-black text-gray-400 uppercase mb-1">{t('上傳匯款單據 (圖片)', 'Upload Receipt Image')}</label>
-                            <div className={`relative border-2 border-dashed rounded-xl p-4 text-center transition-colors ${submitStatus === 'validation-error' ? 'border-red-500 bg-red-50' : 'border-gray-200 hover:border-orange-500'}`}>
-                                <input type="file" accept="image/*" onChange={handleFileChange} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-                                <div className="space-y-1">
-                                    <svg className="w-8 h-8 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                    <p className="text-xs font-bold text-gray-500">{fileName || t('點擊或拖曳圖片至此', 'Click or drag image here')}</p>
-                                    <p className="text-[10px] text-gray-400">{t('限制 5MB 以內', 'Max 5MB')}</p>
-                                </div>
-                            </div>
-                            {submitStatus === 'validation-error' && <p className="text-red-500 text-[10px] font-bold mt-1">{t('請務必上傳匯款單據。', 'Please upload your receipt.')}</p>}
                         </div>
 
                         <div>
