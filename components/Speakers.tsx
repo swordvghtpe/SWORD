@@ -40,14 +40,13 @@ const speakersData: Speaker[] = [
     imageUrl: 'https://i.meee.com.tw/qJfO68E.jpg',
   },
   {
-    nameZh: '江榮山 教授\n(花曼瑋 醫師代)',
-    nameEn: 'Prof. Rong-Shan Jiang\n(Dr. Man-Wei Hua)',
+    nameZh: '江榮山 教授',
+    nameEn: 'Prof. Rong-Shan Jiang',
     titleZh: '',
     titleEn: '',
     affiliationZh: '台中童綜合醫院\n研發創新中心',
     affiliationEn: "Tungs' Metroharbor Hospital, Taiwan",
     imageUrl: 'https://i.meee.com.tw/O5l75pm.jpg',
-    secondaryImageUrl: 'https://i.meee.com.tw/Rf9NaFc.jpg',
   },
   {
     nameZh: '沈炳宏 主任',

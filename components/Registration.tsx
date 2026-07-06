@@ -6,13 +6,13 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYXQFkSwYRqv
 // ---------------------
 
 const domesticFees = [
-  { titleZh: '住院醫師', titleEn: 'Resident', regular: 'NT$ 3,500' },
-  { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', regular: 'NT$ 4,500' },
-  { titleZh: '主治醫師/其他專業人士', titleEn: 'Physician / Other Professionals', regular: 'NT$ 5,500' },
+  { titleZh: '住院醫師', titleEn: 'Resident', regular: '-' },
+  { titleZh: '會員醫師\n(台灣鼻科醫學會)', titleEn: 'Member\n(Taiwan Rhinology Society)', regular: '-' },
+  { titleZh: '主治醫師/其他專業人士', titleEn: 'Physician / Other Professionals', regular: '-' },
 ];
 
 const internationalFees = [
-    { title: 'Attendee', regular: 'USD $ 150' },
+    { title: 'Attendee', regular: '-' },
 ];
 
 interface FormData {
