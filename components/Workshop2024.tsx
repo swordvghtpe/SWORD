@@ -30,7 +30,7 @@ const Workshop2024: React.FC = () => {
               <iframe
                 id="workshop2026-video-iframe"
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/sIv8PlYmLAk"
+                src="https://www.youtube.com/embed/VJ4rqwWcCjY"
                 title="SWORD-2026 Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
